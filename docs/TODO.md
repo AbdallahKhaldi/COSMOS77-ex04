@@ -344,86 +344,86 @@ T-0310 | 5 | reveng | Phase-5 analysis depth task #60: refine interpretation + t
 
 ## Phase 6 — Graph-guided LangGraph agent (state/nodes/graph/llm, caps, ledger)
 
-T-0311 | 6 | agent | Add src/cosmos77/agent/ package skeleton | package imports | todo
-T-0312 | 6 | agent | Define AgentState (TypedDict): task, plan, evidence, retrieved, ledger, caps | state defined | todo
-T-0313 | 6 | agent | Write failing test for AgentState init (red) | test fails | todo
-T-0314 | 6 | agent | Implement AgentState defaults (green) | test passes | todo
-T-0315 | 6 | llm | Add src/cosmos77/agent/llm.py provider wrapper (Gemini via providers.json) | wrapper imports | todo
-T-0316 | 6 | llm | Write failing test for llm wrapper (mocked) (red) | test fails | todo
-T-0317 | 6 | llm | Implement llm wrapper call + response parsing (green) | mocked call passes | todo
-T-0318 | 6 | llm | Add token accounting to llm wrapper (prompt/completion) | tokens recorded | todo
-T-0319 | 6 | llm | Test token accounting | counts captured | todo
-T-0320 | 6 | llm | Add provider-agnostic interface (swap provider via config) | interface stable | todo
-T-0321 | 6 | llm | Test provider swap (mock alt provider) | swaps cleanly | todo
-T-0322 | 6 | nodes | Implement node: load_graph_context (read graph artifacts) | context loaded | todo
-T-0323 | 6 | nodes | Write failing test for load_graph_context (red) | test fails | todo
-T-0324 | 6 | nodes | Make load_graph_context test pass (green) | context populated | todo
-T-0325 | 6 | nodes | Implement node: guided_retrieval (graph-first: god_nodes+centrality) | retrieves ranked nodes | todo
-T-0326 | 6 | nodes | Write failing test for guided_retrieval ordering (red) | test fails | todo
-T-0327 | 6 | nodes | Make guided_retrieval test pass (green) | graph-first order | todo
-T-0328 | 6 | nodes | Implement node: plan (LLM produces investigation plan) | plan produced | todo
-T-0329 | 6 | nodes | Test plan node (mocked llm) | plan in state | todo
-T-0330 | 6 | nodes | Implement node: inspect_code (fetch source for retrieved nodes) | code fetched | todo
-T-0331 | 6 | nodes | Test inspect_code node | snippets in state | todo
-T-0332 | 6 | nodes | Implement node: hypothesize (LLM bug hypothesis from evidence) | hypothesis produced | todo
-T-0333 | 6 | nodes | Test hypothesize node (mocked) | hypothesis in state | todo
-T-0334 | 6 | nodes | Implement node: propose_fix (LLM proposes patch) | patch proposed | todo
-T-0335 | 6 | nodes | Test propose_fix node (mocked) | patch in state | todo
-T-0336 | 6 | nodes | Implement node: verify (run target failing test) | verify result in state | todo
-T-0337 | 6 | nodes | Test verify node (mocked harness) | result captured | todo
-T-0338 | 6 | nodes | Implement node: update_ledger (append decisions/evidence) | ledger grows | todo
-T-0339 | 6 | nodes | Test update_ledger node | entries appended | todo
-T-0340 | 6 | graph | Build LangGraph StateGraph wiring nodes + edges | graph compiles | todo
-T-0341 | 6 | graph | Write failing test: graph compiles + runs one step (red) | test fails | todo
-T-0342 | 6 | graph | Make graph compile test pass (green) | compiles | todo
-T-0343 | 6 | graph | Add conditional edges (retry on verify fail, stop on pass) | branches wired | todo
-T-0344 | 6 | graph | Test conditional routing (pass vs fail) | routes correctly | todo
-T-0345 | 6 | graph | Add graph-first protocol guard: must consult graph before code | guard enforced | todo
-T-0346 | 6 | graph | Write failing test for graph-first guard (red) | test fails | todo
-T-0347 | 6 | graph | Implement graph-first guard (green) | violation blocked | todo
-T-0348 | 6 | caps | Add caps: max steps, max llm calls, max tokens, wall-clock | caps in state | todo
-T-0349 | 6 | caps | Write failing test for step cap (red) | test fails | todo
-T-0350 | 6 | caps | Implement step cap enforcement (green) | halts at cap | todo
-T-0351 | 6 | caps | Implement llm-call cap enforcement | halts at cap | todo
-T-0352 | 6 | caps | Test llm-call cap | halts | todo
-T-0353 | 6 | caps | Implement token cap enforcement | halts at cap | todo
-T-0354 | 6 | caps | Test token cap | halts | todo
-T-0355 | 6 | caps | Implement wall-clock timeout | halts on time | todo
-T-0356 | 6 | caps | Test wall-clock timeout | halts | todo
-T-0357 | 6 | ledger | Define decision-ledger schema (step, node, action, evidence, tier) | schema defined | todo
-T-0358 | 6 | ledger | Write failing test for ledger schema (red) | test fails | todo
-T-0359 | 6 | ledger | Implement ledger writer JSONL (green) | ledger written | todo
-T-0360 | 6 | ledger | Persist ledger to artifacts/agent/ledger.jsonl | file present | todo
-T-0361 | 6 | ledger | Test ledger persistence round-trip | entries reload | todo
-T-0362 | 6 | ledger | Add evidence-tier tagging to every ledger entry | tiers present | todo
-T-0363 | 6 | ledger | Test ledger tier coverage | 100% tagged | todo
-T-0364 | 6 | agent | Add retrieval-cache to avoid duplicate fetches | cache hits logged | todo
-T-0365 | 6 | agent | Test retrieval cache | second fetch cached | todo
-T-0366 | 6 | agent | Add CLI subcommand `agent run` | CLI runs agent | todo
-T-0367 | 6 | agent | Test `agent run` end-to-end (mocked llm+harness) | completes | todo
-T-0368 | 6 | agent | Add dry-run mode (no llm calls, deterministic) | dry-run completes | todo
-T-0369 | 6 | agent | Test dry-run determinism | re-run equal | todo
-T-0370 | 6 | agent | Add structured run summary (steps, tokens, result) | summary emitted | todo
-T-0371 | 6 | agent | Test run summary fields | fields present | todo
-T-0372 | 6 | agent | Add error handling for llm failures (retry/backoff) | retries on error | todo
-T-0373 | 6 | agent | Test llm failure handling | recovers/halts | todo
-T-0374 | 6 | agent | Add prompt templates (system, retrieval, hypothesis, fix) | templates loaded | todo
-T-0375 | 6 | agent | Test prompt template rendering | renders w/ context | todo
-T-0376 | 6 | agent | Inject vault hot.md context into retrieval prompt | hot.md cited | todo
-T-0377 | 6 | agent | Test hot.md injection | context includes hot | todo
-T-0378 | 6 | agent | Sanitize prompts/logs (no secrets) | no leaks | todo
-T-0379 | 6 | agent | Test prompt sanitizer | redactions present | todo
-T-0380 | 6 | agent | Add deterministic seed for agent reproducibility | seed honored | todo
-T-0381 | 6 | agent | Test agent reproducibility | same trace | todo
-T-0382 | 6 | agent | Add docstrings + type hints across agent package | ruff/mypy clean | todo
-T-0383 | 6 | agent | Run coverage gate on agent package (>=85%) | gate green | todo
-T-0384 | 6 | agent | Update docs/PRD_agent.md with implemented interfaces | PRD matches code | todo
-T-0385 | 6 | agent | Update reports/ with agent design note | note written | todo
-T-0386 | 6 | agent | Render agent graph topology diagram (Mermaid) | diagram emitted | todo
-T-0387 | 6 | agent | Commit Phase-6 graph-guided agent | commit pushed; CI green | todo
-T-0388 | 6 | agent | Phase-6 agent robustness task #78: scenario test + fix | scenario covered | todo
-T-0389 | 6 | agent | Phase-6 agent robustness task #79: scenario test + fix | scenario covered | todo
-T-0390 | 6 | agent | Phase-6 agent robustness task #80: scenario test + fix | scenario covered | todo
+T-0311 | 6 | agent | Add src/cosmos77/agent/ package skeleton | package imports | done
+T-0312 | 6 | agent | Define AgentState (TypedDict): task, plan, evidence, retrieved, ledger, caps | state defined | done
+T-0313 | 6 | agent | Write failing test for AgentState init (red) | test fails | done
+T-0314 | 6 | agent | Implement AgentState defaults (green) | test passes | done
+T-0315 | 6 | llm | Add src/cosmos77/agent/llm.py provider wrapper (Gemini via providers.json) | wrapper imports | done
+T-0316 | 6 | llm | Write failing test for llm wrapper (mocked) (red) | test fails | done
+T-0317 | 6 | llm | Implement llm wrapper call + response parsing (green) | mocked call passes | done
+T-0318 | 6 | llm | Add token accounting to llm wrapper (prompt/completion) | tokens recorded | done
+T-0319 | 6 | llm | Test token accounting | counts captured | done
+T-0320 | 6 | llm | Add provider-agnostic interface (swap provider via config) | interface stable | done
+T-0321 | 6 | llm | Test provider swap (mock alt provider) | swaps cleanly | done
+T-0322 | 6 | nodes | Implement node: load_graph_context (read graph artifacts) | context loaded | done
+T-0323 | 6 | nodes | Write failing test for load_graph_context (red) | test fails | done
+T-0324 | 6 | nodes | Make load_graph_context test pass (green) | context populated | done
+T-0325 | 6 | nodes | Implement node: guided_retrieval (graph-first: god_nodes+centrality) | retrieves ranked nodes | done
+T-0326 | 6 | nodes | Write failing test for guided_retrieval ordering (red) | test fails | done
+T-0327 | 6 | nodes | Make guided_retrieval test pass (green) | graph-first order | done
+T-0328 | 6 | nodes | Implement node: plan (LLM produces investigation plan) | plan produced | done
+T-0329 | 6 | nodes | Test plan node (mocked llm) | plan in state | done
+T-0330 | 6 | nodes | Implement node: inspect_code (fetch source for retrieved nodes) | code fetched | done
+T-0331 | 6 | nodes | Test inspect_code node | snippets in state | done
+T-0332 | 6 | nodes | Implement node: hypothesize (LLM bug hypothesis from evidence) | hypothesis produced | done
+T-0333 | 6 | nodes | Test hypothesize node (mocked) | hypothesis in state | done
+T-0334 | 6 | nodes | Implement node: propose_fix (LLM proposes patch) | patch proposed | done
+T-0335 | 6 | nodes | Test propose_fix node (mocked) | patch in state | done
+T-0336 | 6 | nodes | Implement node: verify (run target failing test) | verify result in state | done
+T-0337 | 6 | nodes | Test verify node (mocked harness) | result captured | done
+T-0338 | 6 | nodes | Implement node: update_ledger (append decisions/evidence) | ledger grows | done
+T-0339 | 6 | nodes | Test update_ledger node | entries appended | done
+T-0340 | 6 | graph | Build LangGraph StateGraph wiring nodes + edges | graph compiles | done
+T-0341 | 6 | graph | Write failing test: graph compiles + runs one step (red) | test fails | done
+T-0342 | 6 | graph | Make graph compile test pass (green) | compiles | done
+T-0343 | 6 | graph | Add conditional edges (retry on verify fail, stop on pass) | branches wired | done
+T-0344 | 6 | graph | Test conditional routing (pass vs fail) | routes correctly | done
+T-0345 | 6 | graph | Add graph-first protocol guard: must consult graph before code | guard enforced | done
+T-0346 | 6 | graph | Write failing test for graph-first guard (red) | test fails | done
+T-0347 | 6 | graph | Implement graph-first guard (green) | violation blocked | done
+T-0348 | 6 | caps | Add caps: max steps, max llm calls, max tokens, wall-clock | caps in state | done
+T-0349 | 6 | caps | Write failing test for step cap (red) | test fails | done
+T-0350 | 6 | caps | Implement step cap enforcement (green) | halts at cap | done
+T-0351 | 6 | caps | Implement llm-call cap enforcement | halts at cap | done
+T-0352 | 6 | caps | Test llm-call cap | halts | done
+T-0353 | 6 | caps | Implement token cap enforcement | halts at cap | done
+T-0354 | 6 | caps | Test token cap | halts | done
+T-0355 | 6 | caps | Implement wall-clock timeout | halts on time | done
+T-0356 | 6 | caps | Test wall-clock timeout | halts | done
+T-0357 | 6 | ledger | Define decision-ledger schema (step, node, action, evidence, tier) | schema defined | done
+T-0358 | 6 | ledger | Write failing test for ledger schema (red) | test fails | done
+T-0359 | 6 | ledger | Implement ledger writer JSONL (green) | ledger written | done
+T-0360 | 6 | ledger | Persist ledger to artifacts/agent/ledger.jsonl | file present | done
+T-0361 | 6 | ledger | Test ledger persistence round-trip | entries reload | done
+T-0362 | 6 | ledger | Add evidence-tier tagging to every ledger entry | tiers present | done
+T-0363 | 6 | ledger | Test ledger tier coverage | 100% tagged | done
+T-0364 | 6 | agent | Add retrieval-cache to avoid duplicate fetches | cache hits logged | done
+T-0365 | 6 | agent | Test retrieval cache | second fetch cached | done
+T-0366 | 6 | agent | Add CLI subcommand `agent run` | CLI runs agent | done
+T-0367 | 6 | agent | Test `agent run` end-to-end (mocked llm+harness) | completes | done
+T-0368 | 6 | agent | Add dry-run mode (no llm calls, deterministic) | dry-run completes | done
+T-0369 | 6 | agent | Test dry-run determinism | re-run equal | done
+T-0370 | 6 | agent | Add structured run summary (steps, tokens, result) | summary emitted | done
+T-0371 | 6 | agent | Test run summary fields | fields present | done
+T-0372 | 6 | agent | Add error handling for llm failures (retry/backoff) | retries on error | done
+T-0373 | 6 | agent | Test llm failure handling | recovers/halts | done
+T-0374 | 6 | agent | Add prompt templates (system, retrieval, hypothesis, fix) | templates loaded | done
+T-0375 | 6 | agent | Test prompt template rendering | renders w/ context | done
+T-0376 | 6 | agent | Inject vault hot.md context into retrieval prompt | hot.md cited | done
+T-0377 | 6 | agent | Test hot.md injection | context includes hot | done
+T-0378 | 6 | agent | Sanitize prompts/logs (no secrets) | no leaks | done
+T-0379 | 6 | agent | Test prompt sanitizer | redactions present | done
+T-0380 | 6 | agent | Add deterministic seed for agent reproducibility | seed honored | done
+T-0381 | 6 | agent | Test agent reproducibility | same trace | done
+T-0382 | 6 | agent | Add docstrings + type hints across agent package | ruff/mypy clean | done
+T-0383 | 6 | agent | Run coverage gate on agent package (>=85%) | gate green | done
+T-0384 | 6 | agent | Update docs/PRD_agent.md with implemented interfaces | PRD matches code | done
+T-0385 | 6 | agent | Update reports/ with agent design note | note written | done
+T-0386 | 6 | agent | Render agent graph topology diagram (Mermaid) | diagram emitted | done
+T-0387 | 6 | agent | Commit Phase-6 graph-guided agent | commit pushed; CI green | done
+T-0388 | 6 | agent | Phase-6 agent robustness task #78: scenario test + fix | scenario covered | done
+T-0389 | 6 | agent | Phase-6 agent robustness task #79: scenario test + fix | scenario covered | done
+T-0390 | 6 | agent | Phase-6 agent robustness task #80: scenario test + fix | scenario covered | done
 
 ## Phase 7 — Fix the bug (FAIL->PASS + before/after code + knowledge)
 
