@@ -1,42 +1,33 @@
 ---
 kind: hot
 ---
-# hot.md — bug-critical area
+# hot.md — where the action is
 
-Failing test: `tqdm/tests/tests_contrib.py::test_enumerate`. Start here, then open 2-3 pages.
+Tracking **9** changed node(s) and their 1-hop neighbours.
 
-## God Nodes (a God Node is an unhealthy Hub — too central)
-- [[tqdm]] — 106 edges
-- [[tests_tqdm.py]] — 77 edges
-- [[closing()]] — 74 edges
-- [[StringIO]] — 69 edges
-- [[getvalue()|.getvalue()]] — 38 edges
-- [[std.py]] — 37 edges
-- [[__init__.py]] — 21 edges
-- [[TMonitor]] — 21 edges
-- [[_utils.py]] — 19 edges
-- [[trange()]] — 19 edges
-- [[Comparable]] — 19 edges
-- [[TqdmDeprecationWarning]] — 18 edges
-- [[DiscreteTimer]] — 18 edges
-- [[TqdmDefaultWriteLock]] — 16 edges
-- [[Bar]] — 16 edges
+## Test contrib.tenumerate (changed)
+- 1-hop neighbours: test_enumerate()
 
-## Failing-test neighborhood
-- [[tqdm]]
-- [[tests_tqdm.py]]
-- [[closing()]]
-- [[StringIO]]
-- [[getvalue()|.getvalue()]]
-- [[std.py]]
-- [[__init__.py]]
-- [[TMonitor]]
-- [[_utils.py]]
-- [[trange()]]
-- [[Comparable]]
-- [[TqdmDeprecationWarning]]
-- [[DiscreteTimer]]
-- [[TqdmDefaultWriteLock]]
-- [[Bar]]
-- test_enumerate()
-- test_enumerate_numpy()
+## Test contrib.tenumerate(numpy.ndarray) (changed)
+- 1-hop neighbours: test_enumerate_numpy()
+
+## Tests for `tqdm.contrib`. (changed)
+- 1-hop neighbours: tests_contrib.py
+
+## incr() (changed)
+- 1-hop neighbours: tests_contrib.py
+
+## test_enumerate() (changed)
+- 1-hop neighbours: tenumerate(), StringIO, Test contrib.tenumerate, closing(), tests_contrib.py
+
+## test_enumerate_numpy() (changed)
+- 1-hop neighbours: tenumerate(), StringIO, Test contrib.tenumerate(numpy.ndarray), closing(), tests_contrib.py
+
+## test_map() (changed)
+- 1-hop neighbours: StringIO, closing(), tests_contrib.py
+
+## test_zip() (changed)
+- 1-hop neighbours: StringIO, closing(), tests_contrib.py
+
+## tests_contrib.py (changed)
+- 1-hop neighbours: incr(), Tests for `tqdm.contrib`., test_enumerate(), test_enumerate_numpy(), test_map(), test_zip()
