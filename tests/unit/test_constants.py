@@ -29,3 +29,9 @@ def test_pipeline_stages_are_well_formed():
     build_parser()
     assert "prepare-target" in constants.PIPELINE_STAGES
     assert constants.PIPELINE_STAGES[-1] == "run"
+
+
+def test_evidence_tiers_and_node_kinds():
+    assert constants.EVIDENCE_TIERS == ("extracted", "inferred", "ambiguous")
+    assert "module" in constants.NODE_KINDS
+    assert (constants.BUGGY_VERSION, constants.FIXED_VERSION) == (0, 1)

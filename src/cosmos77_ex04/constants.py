@@ -28,3 +28,15 @@ PIPELINE_STAGES: tuple[str, ...] = (
     "extensions",
     "run",
 )
+
+#: Evidence tiers for graph edges (the professor's vocabulary, C14). An edge is
+#: ``extracted`` when the graph proves it (a literal call/import), ``inferred``
+#: when reasoned from context, and ``ambiguous`` when uncertain.
+EVIDENCE_TIERS: tuple[str, ...] = ("extracted", "inferred", "ambiguous")
+
+#: The kinds of node Graphify emits (and our DIY fallback mirrors).
+NODE_KINDS: tuple[str, ...] = ("module", "class", "function", "method")
+
+#: Bug-version selectors for the BugsInPy harness (0 = buggy, 1 = fixed).
+BUGGY_VERSION: int = 0
+FIXED_VERSION: int = 1
