@@ -548,61 +548,61 @@ T-0505 | 8 | tokens | Phase-8 study rigor task #60: additional metric + test | m
 
 ## Phase 9 — Extensions (centrality_rank, dynamic_hot, orphans, impact_report)
 
-T-0506 | 9 | ext | Add src/cosmos77/ext/ package skeleton | package imports | todo
-T-0507 | 9 | ext | centrality_rank: design CLI/API contract | contract doc | todo
-T-0508 | 9 | ext | centrality_rank: write failing test (red) | test fails | todo
-T-0509 | 9 | ext | centrality_rank: implement ranked output (green) | ranks nodes | todo
-T-0510 | 9 | ext | centrality_rank: add tie-breaking + stable sort | deterministic | todo
-T-0511 | 9 | ext | centrality_rank: test tie-breaking | stable | todo
-T-0512 | 9 | ext | centrality_rank: persist to artifacts/ext/centrality_rank.json | file present | todo
-T-0513 | 9 | ext | centrality_rank: CLI subcommand + test | CLI runs | todo
-T-0514 | 9 | ext | centrality_rank: docstrings + type hints | ruff/mypy clean | todo
-T-0515 | 9 | ext | centrality_rank: render to vault page | page written | todo
-T-0516 | 9 | ext | centrality_rank: evidence tiers on entries | tiers present | todo
-T-0517 | 9 | ext | dynamic_hot: design (re-rank hot.md as fixes land) | contract doc | todo
-T-0518 | 9 | ext | dynamic_hot: write failing test (red) | test fails | todo
-T-0519 | 9 | ext | dynamic_hot: implement dynamic re-ranking (green) | re-ranks | todo
-T-0520 | 9 | ext | dynamic_hot: incorporate recent-change signal | signal used | todo
-T-0521 | 9 | ext | dynamic_hot: test re-rank after change | order updates | todo
-T-0522 | 9 | ext | dynamic_hot: persist hot history | history kept | todo
-T-0523 | 9 | ext | dynamic_hot: test history persistence | round-trip ok | todo
-T-0524 | 9 | ext | dynamic_hot: CLI subcommand + test | CLI runs | todo
-T-0525 | 9 | ext | dynamic_hot: update vault hot.md dynamically | hot.md updated | todo
-T-0526 | 9 | ext | dynamic_hot: docstrings + type hints | ruff/mypy clean | todo
-T-0527 | 9 | ext | orphans: design (detect dead/disconnected nodes) | contract doc | todo
-T-0528 | 9 | ext | orphans: write failing test (red) | test fails | todo
-T-0529 | 9 | ext | orphans: implement orphan detection (green) | orphans listed | todo
-T-0530 | 9 | ext | orphans: classify orphan type (unused/unreachable) | types assigned | todo
-T-0531 | 9 | ext | orphans: test classification | types correct | todo
-T-0532 | 9 | ext | orphans: persist to artifacts/ext/orphans.json | file present | todo
-T-0533 | 9 | ext | orphans: CLI subcommand + test | CLI runs | todo
-T-0534 | 9 | ext | orphans: render orphans report/page | page written | todo
-T-0535 | 9 | ext | orphans: evidence tiers on findings | tiers present | todo
-T-0536 | 9 | ext | orphans: docstrings + type hints | ruff/mypy clean | todo
-T-0537 | 9 | ext | impact_report: design (blast radius of a change) | contract doc | todo
-T-0538 | 9 | ext | impact_report: write failing test (red) | test fails | todo
-T-0539 | 9 | ext | impact_report: implement reachability/impact set (green) | impact set computed | todo
-T-0540 | 9 | ext | impact_report: include centrality-weighted impact | weighted score | todo
-T-0541 | 9 | ext | impact_report: test impact set on toy graph | matches expected | todo
-T-0542 | 9 | ext | impact_report: apply to the Phase-7 fix (real blast radius) | report on fix | todo
-T-0543 | 9 | ext | impact_report: test fix-impact report | report produced | todo
-T-0544 | 9 | ext | impact_report: persist to artifacts/ext/impact.json | file present | todo
-T-0545 | 9 | ext | impact_report: CLI subcommand + test | CLI runs | todo
-T-0546 | 9 | ext | impact_report: render impact report/page | page written | todo
-T-0547 | 9 | ext | impact_report: evidence tiers on claims | tiers present | todo
-T-0548 | 9 | ext | impact_report: docstrings + type hints | ruff/mypy clean | todo
-T-0549 | 9 | ext | Cross-link all extensions into vault index | links resolve | todo
-T-0550 | 9 | ext | Test extension cross-links | resolve | todo
-T-0551 | 9 | ext | Sanitize all extension artifacts | no leaks | todo
-T-0552 | 9 | ext | Test extension sanitizers | redactions present | todo
-T-0553 | 9 | ext | Run coverage gate on ext package (>=85%) | gate green | todo
-T-0554 | 9 | ext | Write reports/extensions.md summarizing all four | report written | todo
-T-0555 | 9 | ext | Test extensions report embeds | links valid | todo
-T-0556 | 9 | ext | Update docs/PRD_extensions.md with interfaces | PRD matches code | todo
-T-0557 | 9 | ext | Add honest-measurement caveats to extensions report | caveats present | todo
-T-0558 | 9 | ext | Deterministic extension outputs (stable diff) | re-run equal | todo
-T-0559 | 9 | ext | Commit Phase-9 extensions | commit pushed; CI green | todo
-T-0560 | 9 | ext | Phase-9 extension polish task #55: edge case + test | case covered | todo
+T-0506 | 9 | ext | Add src/cosmos77/ext/ package skeleton | package imports | done
+T-0507 | 9 | ext | centrality_rank: design CLI/API contract | contract doc | done
+T-0508 | 9 | ext | centrality_rank: write failing test (red) | test fails | done
+T-0509 | 9 | ext | centrality_rank: implement ranked output (green) | ranks nodes | done
+T-0510 | 9 | ext | centrality_rank: add tie-breaking + stable sort | deterministic | done
+T-0511 | 9 | ext | centrality_rank: test tie-breaking | stable | done
+T-0512 | 9 | ext | centrality_rank: persist to artifacts/ext/centrality_rank.json | file present | done
+T-0513 | 9 | ext | centrality_rank: CLI subcommand + test | CLI runs | done
+T-0514 | 9 | ext | centrality_rank: docstrings + type hints | ruff/mypy clean | done
+T-0515 | 9 | ext | centrality_rank: render to vault page | page written | done
+T-0516 | 9 | ext | centrality_rank: evidence tiers on entries | tiers present | done
+T-0517 | 9 | ext | dynamic_hot: design (re-rank hot.md as fixes land) | contract doc | done
+T-0518 | 9 | ext | dynamic_hot: write failing test (red) | test fails | done
+T-0519 | 9 | ext | dynamic_hot: implement dynamic re-ranking (green) | re-ranks | done
+T-0520 | 9 | ext | dynamic_hot: incorporate recent-change signal | signal used | done
+T-0521 | 9 | ext | dynamic_hot: test re-rank after change | order updates | done
+T-0522 | 9 | ext | dynamic_hot: persist hot history | history kept | done
+T-0523 | 9 | ext | dynamic_hot: test history persistence | round-trip ok | done
+T-0524 | 9 | ext | dynamic_hot: CLI subcommand + test | CLI runs | done
+T-0525 | 9 | ext | dynamic_hot: update vault hot.md dynamically | hot.md updated | done
+T-0526 | 9 | ext | dynamic_hot: docstrings + type hints | ruff/mypy clean | done
+T-0527 | 9 | ext | orphans: design (detect dead/disconnected nodes) | contract doc | done
+T-0528 | 9 | ext | orphans: write failing test (red) | test fails | done
+T-0529 | 9 | ext | orphans: implement orphan detection (green) | orphans listed | done
+T-0530 | 9 | ext | orphans: classify orphan type (unused/unreachable) | types assigned | done
+T-0531 | 9 | ext | orphans: test classification | types correct | done
+T-0532 | 9 | ext | orphans: persist to artifacts/ext/orphans.json | file present | done
+T-0533 | 9 | ext | orphans: CLI subcommand + test | CLI runs | done
+T-0534 | 9 | ext | orphans: render orphans report/page | page written | done
+T-0535 | 9 | ext | orphans: evidence tiers on findings | tiers present | done
+T-0536 | 9 | ext | orphans: docstrings + type hints | ruff/mypy clean | done
+T-0537 | 9 | ext | impact_report: design (blast radius of a change) | contract doc | done
+T-0538 | 9 | ext | impact_report: write failing test (red) | test fails | done
+T-0539 | 9 | ext | impact_report: implement reachability/impact set (green) | impact set computed | done
+T-0540 | 9 | ext | impact_report: include centrality-weighted impact | weighted score | done
+T-0541 | 9 | ext | impact_report: test impact set on toy graph | matches expected | done
+T-0542 | 9 | ext | impact_report: apply to the Phase-7 fix (real blast radius) | report on fix | done
+T-0543 | 9 | ext | impact_report: test fix-impact report | report produced | done
+T-0544 | 9 | ext | impact_report: persist to artifacts/ext/impact.json | file present | done
+T-0545 | 9 | ext | impact_report: CLI subcommand + test | CLI runs | done
+T-0546 | 9 | ext | impact_report: render impact report/page | page written | done
+T-0547 | 9 | ext | impact_report: evidence tiers on claims | tiers present | done
+T-0548 | 9 | ext | impact_report: docstrings + type hints | ruff/mypy clean | done
+T-0549 | 9 | ext | Cross-link all extensions into vault index | links resolve | done
+T-0550 | 9 | ext | Test extension cross-links | resolve | done
+T-0551 | 9 | ext | Sanitize all extension artifacts | no leaks | done
+T-0552 | 9 | ext | Test extension sanitizers | redactions present | done
+T-0553 | 9 | ext | Run coverage gate on ext package (>=85%) | gate green | done
+T-0554 | 9 | ext | Write reports/extensions.md summarizing all four | report written | done
+T-0555 | 9 | ext | Test extensions report embeds | links valid | done
+T-0556 | 9 | ext | Update docs/PRD_extensions.md with interfaces | PRD matches code | done
+T-0557 | 9 | ext | Add honest-measurement caveats to extensions report | caveats present | done
+T-0558 | 9 | ext | Deterministic extension outputs (stable diff) | re-run equal | done
+T-0559 | 9 | ext | Commit Phase-9 extensions | commit pushed; CI green | done
+T-0560 | 9 | ext | Phase-9 extension polish task #55: edge case + test | case covered | done
 
 ## Phase 10 — README lab report + visuals + spec sheet
 
