@@ -24,6 +24,7 @@ from cosmos77_ex04.shared.config import Config
 from cosmos77_ex04.shared.gatekeeper import Gatekeeper
 from cosmos77_ex04.target.checkout import BugsInPyHarness, TargetInfo
 from cosmos77_ex04.target.info import list_bugs
+from cosmos77_ex04.tokens.run import run_comparison
 from cosmos77_ex04.vault.build import build_vault as build_vault_fn
 
 
@@ -123,9 +124,9 @@ class SDK:
         """Apply the diagnosed fix and verify the failing test goes FAIL→PASS."""
         return run_fix(self.config, self.repo_root)
 
-    def compare_tokens(self) -> Any:
-        """Run the naive baseline vs graph-guided token comparison (Phase 8)."""
-        raise NotImplementedError("compare_tokens lands in Phase 8")
+    def compare_tokens(self) -> dict[str, Any]:
+        """Run the honest naive-vs-graph-guided token comparison (real Gemini, same bug)."""
+        return run_comparison(self.config, self.repo_root)
 
     def run_extensions(self) -> Any:
         """Run the original extensions (Phase 9)."""

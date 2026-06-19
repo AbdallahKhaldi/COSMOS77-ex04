@@ -95,6 +95,21 @@ def _dispatch(command: str) -> int:
             f"fix: {result['file']}  before={before} -> after={after}  applied={result['applied']}"
         )
         return 0
+    if command == "compare":
+        comparison = sdk.compare_tokens()["comparison"]
+        print(
+            f"baseline: {comparison['baseline_total_tokens']} tokens, "
+            f"{comparison['files_baseline']} files"
+        )
+        print(
+            f"guided:   {comparison['guided_total_tokens']} tokens, "
+            f"{comparison['files_guided']} files"
+        )
+        print(
+            f"saved: {comparison['tokens_saved']} tokens "
+            f"({comparison['pct_tokens_saved']}%), {comparison['files_saved']} files"
+        )
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 
