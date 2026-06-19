@@ -14,12 +14,14 @@ from typing import Any
 
 from cosmos77_ex04.graphify.fallback import write_fallback
 from cosmos77_ex04.graphify.model import GraphModel
+from cosmos77_ex04.graphify.report import parse_report
 from cosmos77_ex04.graphify.run import copy_artifacts, out_graph_dir
 from cosmos77_ex04.graphify.run import run_graphify as run_graphify_cli
 from cosmos77_ex04.shared.config import Config
 from cosmos77_ex04.shared.gatekeeper import Gatekeeper
 from cosmos77_ex04.target.checkout import BugsInPyHarness, TargetInfo
 from cosmos77_ex04.target.info import list_bugs
+from cosmos77_ex04.vault.build import build_vault as build_vault_fn
 
 
 class SDK:
@@ -79,9 +81,14 @@ class SDK:
             "god_nodes": [model.label_of(nid) for nid, _ in model.god_nodes(5)],
         }
 
-    def build_vault(self) -> Any:
-        """Generate the Obsidian vault (Phase 4)."""
-        raise NotImplementedError("build_vault lands in Phase 4")
+    def build_vault(self) -> dict[str, Any]:
+        """Generate the Obsidian knowledge vault (index.md / hot.md / pages) from the graph."""
+        artifacts_dir = self.repo_root / self.config.paths().get("artifacts_dir", "artifacts")
+        obsidian_dir = self.repo_root / self.config.paths().get("obsidian_dir", "obsidian")
+        model = GraphModel.from_json(artifacts_dir / "graph.json")
+        report = parse_report(artifacts_dir / "GRAPH_REPORT.md")
+        failing_test = self.config.target().get("failing_test", "")
+        return build_vault_fn(model, report, obsidian_dir, failing_test=failing_test)
 
     def extract_diagrams(self) -> Any:
         """Extract the block diagram + OOP schema (Phase 5)."""

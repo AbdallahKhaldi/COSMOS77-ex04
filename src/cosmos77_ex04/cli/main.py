@@ -62,6 +62,14 @@ def _dispatch(command: str) -> int:
         print(f"tiers: {summary['tiers']}")
         print(f"god_nodes: {summary['god_nodes']}")
         return 0
+    if command == "vault":
+        summary = sdk.build_vault()
+        print(
+            f"vault: {summary['files']} files "
+            f"({summary['pages']} pages, {summary['communities']} communities)"
+        )
+        print(f"god-node pages: {len(summary['god_nodes'])}")
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 
