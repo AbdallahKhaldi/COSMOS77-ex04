@@ -38,7 +38,22 @@ def main(argv: list[str] | None = None) -> int:
     if args.command is None:
         build_parser().print_help()
         return 0
-    print(f"`{args.command}` is not wired yet — it lands in its phase (see TODO.md).")
+    return _dispatch(args.command)
+
+
+def _dispatch(command: str) -> int:
+    """Run one pipeline stage via the SDK and print a short summary."""
+    from cosmos77_ex04.sdk.sdk import SDK
+
+    sdk = SDK()
+    if command == "prepare-target":
+        info = sdk.prepare_target()
+        verdict = "PASS" if info.test_result.passed else "FAIL (expected — that is the bug)"
+        print(f"target: {info.project} bug #{info.bug_id} -> {info.project_dir}")
+        print(f"python: {info.bug.python_version or 'n/a'}  test: {verdict}")
+        print(f"token_ledger: {sdk.spec_sheet()}")
+        return 0
+    print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 
 
