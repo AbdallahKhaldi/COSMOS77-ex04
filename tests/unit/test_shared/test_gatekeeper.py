@@ -64,6 +64,7 @@ def test_ledger_accepts_extra_metrics():
 
 
 def test_scrub_redacts_api_key():
-    scrubbed = Gatekeeper.scrub("key=AIzaSyA1234567890abcdefghijklmnopqrstuv now")
+    # Obviously-fake placeholder (NOT a real key) — only here to exercise the regex.
+    scrubbed = Gatekeeper.scrub("key=AIzaSyFAKE_EXAMPLE_PLACEHOLDER_000000000 now")
     assert "AIza" not in scrubbed
     assert "[REDACTED]" in scrubbed
