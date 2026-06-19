@@ -82,7 +82,7 @@ def test_repo_root_is_config_parent(config, config_dir):
 
 @pytest.mark.parametrize(
     "method",
-    ["apply_fix", "compare_tokens", "run_extensions"],
+    ["compare_tokens", "run_extensions"],
 )
 def test_unimplemented_stages_raise(config, method):
     with pytest.raises(NotImplementedError):

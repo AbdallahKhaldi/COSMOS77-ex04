@@ -29,6 +29,11 @@ _SETUP = {
     },
     "tokens": {"baseline_mode": "raw_files", "guided_mode": "graph_guided", "measure": ["tokens"]},
     "paths": {"obsidian_dir": "obsidian", "reports_dir": "reports", "artifacts_dir": "artifacts"},
+    "fix": {
+        "file": "pkg/mod.py",
+        "search": "return foo(a, b)",
+        "replace": "return foo(b, a)",
+    },
 }
 _PROVIDERS = {
     "version": "1.00",

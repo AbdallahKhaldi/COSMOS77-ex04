@@ -33,5 +33,10 @@
     "obsidian_dir": "obsidian",
     "reports_dir": "reports",
     "artifacts_dir": "artifacts"
+  },
+  "fix": {
+    "file": "tqdm/contrib/__init__.py",
+    "search": "return enumerate(tqdm_class(iterable, start, **tqdm_kwargs))",
+    "replace": "return enumerate(tqdm_class(iterable, **tqdm_kwargs), start)"
   }
 }

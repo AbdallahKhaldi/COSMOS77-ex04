@@ -87,6 +87,14 @@ def _dispatch(command: str) -> int:
         print("--- diagnosis ---")
         print(result["diagnosis"][:800])
         return 0
+    if command == "fix":
+        result = sdk.apply_fix()
+        before = "PASS" if result["before_passed"] else "FAIL"
+        after = "PASS" if result["after_passed"] else "FAIL"
+        print(
+            f"fix: {result['file']}  before={before} -> after={after}  applied={result['applied']}"
+        )
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 

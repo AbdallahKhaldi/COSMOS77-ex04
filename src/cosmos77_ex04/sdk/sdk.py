@@ -12,6 +12,7 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
+from cosmos77_ex04.agent.fix import run_fix
 from cosmos77_ex04.agent.graph import investigate
 from cosmos77_ex04.graphify.fallback import write_fallback
 from cosmos77_ex04.graphify.model import GraphModel
@@ -118,9 +119,9 @@ class SDK:
         model = GraphModel.from_json(artifacts_dir / "graph.json")
         return investigate(self.config, self.gatekeeper, model, self.repo_root)
 
-    def apply_fix(self) -> Any:
-        """Apply + verify the fix, FAIL→PASS (Phase 7)."""
-        raise NotImplementedError("apply_fix lands in Phase 7")
+    def apply_fix(self) -> dict[str, Any]:
+        """Apply the diagnosed fix and verify the failing test goes FAIL→PASS."""
+        return run_fix(self.config, self.repo_root)
 
     def compare_tokens(self) -> Any:
         """Run the naive baseline vs graph-guided token comparison (Phase 8)."""
