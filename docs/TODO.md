@@ -485,66 +485,66 @@ T-0445 | 7 | fix | Phase-7 fix validation task #55: extra check + test | check c
 
 ## Phase 8 — Token comparison (naive baseline vs guided, chart, honest narrative)
 
-T-0446 | 8 | tokens | Add src/cosmos77/study/ package skeleton | package imports | todo
-T-0447 | 8 | tokens | Define naive baseline agent (no graph guidance, full-context) | baseline defined | todo
-T-0448 | 8 | tokens | Write failing test for naive baseline run (red) | test fails | todo
-T-0449 | 8 | tokens | Implement naive baseline run (green, mocked llm) | completes | todo
-T-0450 | 8 | tokens | Instrument naive baseline token counting | tokens recorded | todo
-T-0451 | 8 | tokens | Test naive baseline token capture | counts present | todo
-T-0452 | 8 | tokens | Define guided agent run reuse (Phase-6 agent) | reuses agent | todo
-T-0453 | 8 | tokens | Instrument guided run token counting | tokens recorded | todo
-T-0454 | 8 | tokens | Test guided token capture | counts present | todo
-T-0455 | 8 | tokens | Implement comparison harness (run both, collect metrics) | metrics dict | todo
-T-0456 | 8 | tokens | Write failing test for comparison harness (red) | test fails | todo
-T-0457 | 8 | tokens | Make comparison harness test pass (green) | both runs compared | todo
-T-0458 | 8 | tokens | Collect metrics: prompt tokens, completion tokens, total | metrics complete | todo
-T-0459 | 8 | tokens | Collect metrics: steps, llm calls, wall-clock, result | metrics complete | todo
-T-0460 | 8 | tokens | Compute deltas + reduction % (guided vs naive) | deltas computed | todo
-T-0461 | 8 | tokens | Test delta computation | math correct | todo
-T-0462 | 8 | tokens | Persist comparison to artifacts/study/comparison.json | file present | todo
-T-0463 | 8 | tokens | Test comparison persistence | round-trip ok | todo
-T-0464 | 8 | tokens | Run multiple trials (N runs) for variance | trials recorded | todo
-T-0465 | 8 | tokens | Compute mean/stddev across trials | stats computed | todo
-T-0466 | 8 | tokens | Test trial aggregation | stats correct | todo
-T-0467 | 8 | tokens | Add chart: token usage bar chart (matplotlib) | PNG written | todo
-T-0468 | 8 | tokens | Write failing test for chart generation (red) | test fails | todo
-T-0469 | 8 | tokens | Make chart generation test pass (green) | PNG non-empty | todo
-T-0470 | 8 | tokens | Add chart: steps/llm-calls comparison | PNG written | todo
-T-0471 | 8 | tokens | Test second chart | PNG present | todo
-T-0472 | 8 | tokens | Add chart: cost estimate (tokens*price) | PNG written | todo
-T-0473 | 8 | tokens | Test cost chart | PNG present | todo
-T-0474 | 8 | tokens | Write reports/token_comparison.md (honest narrative) | report written | todo
-T-0475 | 8 | tokens | State methodology + what is measured/not measured | methodology section | todo
-T-0476 | 8 | tokens | Add honest-measurement caveats (mocked vs live, variance) | caveats present | todo
-T-0477 | 8 | tokens | Embed charts + table in token_comparison.md | embeds present | todo
-T-0478 | 8 | tokens | Test report embeds resolve | links valid | todo
-T-0479 | 8 | tokens | Tag report claims with evidence tiers | tiers present | todo
-T-0480 | 8 | tokens | Add CLI subcommand `study compare` | CLI runs study | todo
-T-0481 | 8 | tokens | Test `study compare` end-to-end | artifacts produced | todo
-T-0482 | 8 | tokens | Add dry-run/mocked mode for deterministic study | deterministic | todo
-T-0483 | 8 | tokens | Test study determinism | re-run equal | todo
-T-0484 | 8 | tokens | Sanitize study artifacts (no secrets) | no leaks | todo
-T-0485 | 8 | tokens | Test study sanitizer | redactions present | todo
-T-0486 | 8 | tokens | Add results table (naive vs guided) to report | table present | todo
-T-0487 | 8 | tokens | Test results table rendering | rows match data | todo
-T-0488 | 8 | tokens | Add conclusion: when guidance helps / fails honestly | conclusion present | todo
-T-0489 | 8 | tokens | Cross-link study into vault + README | links resolve | todo
-T-0490 | 8 | tokens | Test cross-links | resolve | todo
-T-0491 | 8 | tokens | Add reproducibility note (seeds, config, versions) | note present | todo
-T-0492 | 8 | tokens | Record provider/model + token prices used | recorded | todo
-T-0493 | 8 | tokens | Add sensitivity note (results depend on target/bug) | note present | todo
-T-0494 | 8 | tokens | Run coverage gate on study package (>=85%) | gate green | todo
-T-0495 | 8 | tokens | Add docstrings + type hints across study package | ruff/mypy clean | todo
-T-0496 | 8 | tokens | Update docs/PRD_tokens.md with implemented interfaces | PRD matches code | todo
-T-0497 | 8 | tokens | Peer-review token_comparison.md for honesty | review addressed | todo
-T-0498 | 8 | tokens | Update reports/ index with study artifact | index updated | todo
-T-0499 | 8 | tokens | Commit Phase-8 token comparison | commit pushed; CI green | todo
-T-0500 | 8 | tokens | Validate charts render in README (relative paths) | render ok | todo
-T-0501 | 8 | tokens | Phase-8 study rigor task #56: additional metric + test | metric covered | todo
-T-0502 | 8 | tokens | Phase-8 study rigor task #57: additional metric + test | metric covered | todo
-T-0503 | 8 | tokens | Phase-8 study rigor task #58: additional metric + test | metric covered | todo
-T-0504 | 8 | tokens | Phase-8 study rigor task #59: additional metric + test | metric covered | todo
-T-0505 | 8 | tokens | Phase-8 study rigor task #60: additional metric + test | metric covered | todo
+T-0446 | 8 | tokens | Add src/cosmos77/study/ package skeleton | package imports | done
+T-0447 | 8 | tokens | Define naive baseline agent (no graph guidance, full-context) | baseline defined | done
+T-0448 | 8 | tokens | Write failing test for naive baseline run (red) | test fails | done
+T-0449 | 8 | tokens | Implement naive baseline run (green, mocked llm) | completes | done
+T-0450 | 8 | tokens | Instrument naive baseline token counting | tokens recorded | done
+T-0451 | 8 | tokens | Test naive baseline token capture | counts present | done
+T-0452 | 8 | tokens | Define guided agent run reuse (Phase-6 agent) | reuses agent | done
+T-0453 | 8 | tokens | Instrument guided run token counting | tokens recorded | done
+T-0454 | 8 | tokens | Test guided token capture | counts present | done
+T-0455 | 8 | tokens | Implement comparison harness (run both, collect metrics) | metrics dict | done
+T-0456 | 8 | tokens | Write failing test for comparison harness (red) | test fails | done
+T-0457 | 8 | tokens | Make comparison harness test pass (green) | both runs compared | done
+T-0458 | 8 | tokens | Collect metrics: prompt tokens, completion tokens, total | metrics complete | done
+T-0459 | 8 | tokens | Collect metrics: steps, llm calls, wall-clock, result | metrics complete | done
+T-0460 | 8 | tokens | Compute deltas + reduction % (guided vs naive) | deltas computed | done
+T-0461 | 8 | tokens | Test delta computation | math correct | done
+T-0462 | 8 | tokens | Persist comparison to artifacts/study/comparison.json | file present | done
+T-0463 | 8 | tokens | Test comparison persistence | round-trip ok | done
+T-0464 | 8 | tokens | Run multiple trials (N runs) for variance | trials recorded | done
+T-0465 | 8 | tokens | Compute mean/stddev across trials | stats computed | done
+T-0466 | 8 | tokens | Test trial aggregation | stats correct | done
+T-0467 | 8 | tokens | Add chart: token usage bar chart (matplotlib) | PNG written | done
+T-0468 | 8 | tokens | Write failing test for chart generation (red) | test fails | done
+T-0469 | 8 | tokens | Make chart generation test pass (green) | PNG non-empty | done
+T-0470 | 8 | tokens | Add chart: steps/llm-calls comparison | PNG written | done
+T-0471 | 8 | tokens | Test second chart | PNG present | done
+T-0472 | 8 | tokens | Add chart: cost estimate (tokens*price) | PNG written | done
+T-0473 | 8 | tokens | Test cost chart | PNG present | done
+T-0474 | 8 | tokens | Write reports/token_comparison.md (honest narrative) | report written | done
+T-0475 | 8 | tokens | State methodology + what is measured/not measured | methodology section | done
+T-0476 | 8 | tokens | Add honest-measurement caveats (mocked vs live, variance) | caveats present | done
+T-0477 | 8 | tokens | Embed charts + table in token_comparison.md | embeds present | done
+T-0478 | 8 | tokens | Test report embeds resolve | links valid | done
+T-0479 | 8 | tokens | Tag report claims with evidence tiers | tiers present | done
+T-0480 | 8 | tokens | Add CLI subcommand `study compare` | CLI runs study | done
+T-0481 | 8 | tokens | Test `study compare` end-to-end | artifacts produced | done
+T-0482 | 8 | tokens | Add dry-run/mocked mode for deterministic study | deterministic | done
+T-0483 | 8 | tokens | Test study determinism | re-run equal | done
+T-0484 | 8 | tokens | Sanitize study artifacts (no secrets) | no leaks | done
+T-0485 | 8 | tokens | Test study sanitizer | redactions present | done
+T-0486 | 8 | tokens | Add results table (naive vs guided) to report | table present | done
+T-0487 | 8 | tokens | Test results table rendering | rows match data | done
+T-0488 | 8 | tokens | Add conclusion: when guidance helps / fails honestly | conclusion present | done
+T-0489 | 8 | tokens | Cross-link study into vault + README | links resolve | done
+T-0490 | 8 | tokens | Test cross-links | resolve | done
+T-0491 | 8 | tokens | Add reproducibility note (seeds, config, versions) | note present | done
+T-0492 | 8 | tokens | Record provider/model + token prices used | recorded | done
+T-0493 | 8 | tokens | Add sensitivity note (results depend on target/bug) | note present | done
+T-0494 | 8 | tokens | Run coverage gate on study package (>=85%) | gate green | done
+T-0495 | 8 | tokens | Add docstrings + type hints across study package | ruff/mypy clean | done
+T-0496 | 8 | tokens | Update docs/PRD_tokens.md with implemented interfaces | PRD matches code | done
+T-0497 | 8 | tokens | Peer-review token_comparison.md for honesty | review addressed | done
+T-0498 | 8 | tokens | Update reports/ index with study artifact | index updated | done
+T-0499 | 8 | tokens | Commit Phase-8 token comparison | commit pushed; CI green | done
+T-0500 | 8 | tokens | Validate charts render in README (relative paths) | render ok | done
+T-0501 | 8 | tokens | Phase-8 study rigor task #56: additional metric + test | metric covered | done
+T-0502 | 8 | tokens | Phase-8 study rigor task #57: additional metric + test | metric covered | done
+T-0503 | 8 | tokens | Phase-8 study rigor task #58: additional metric + test | metric covered | done
+T-0504 | 8 | tokens | Phase-8 study rigor task #59: additional metric + test | metric covered | done
+T-0505 | 8 | tokens | Phase-8 study rigor task #60: additional metric + test | metric covered | done
 
 ## Phase 9 — Extensions (centrality_rank, dynamic_hot, orphans, impact_report)
 
