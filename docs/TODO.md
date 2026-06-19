@@ -281,66 +281,66 @@ T-0250 | 4 | vault | Phase-4 vault polish task #60: rendering edge case + test |
 
 ## Phase 5 — Reverse-engineering (block diagram + OOP schema + God-Node/centrality)
 
-T-0251 | 5 | reveng | Add src/cosmos77/reveng/analyzer.py skeleton | module imports | todo
-T-0252 | 5 | reveng | Write failing test: block diagram model built from graph (red) | test fails | todo
-T-0253 | 5 | reveng | Implement block diagram model (components -> blocks) | green | todo
-T-0254 | 5 | reveng | Render block diagram as Mermaid | mermaid emitted | todo
-T-0255 | 5 | reveng | Test Mermaid block diagram well-formed | parses | todo
-T-0256 | 5 | reveng | Render block diagram PNG via mermaid-cli | PNG written | todo
-T-0257 | 5 | reveng | Test PNG file produced + non-empty | size>0 | todo
-T-0258 | 5 | reveng | Add fallback if mermaid-cli missing (skip+warn) | graceful skip | todo
-T-0259 | 5 | reveng | Build OOP schema model (classes, methods, inheritance) | schema dict | todo
-T-0260 | 5 | reveng | Write failing test for OOP schema extraction (red) | test fails | todo
-T-0261 | 5 | reveng | Implement OOP schema extraction from graph (green) | classes listed | todo
-T-0262 | 5 | reveng | Render OOP class diagram as Mermaid | classDiagram emitted | todo
-T-0263 | 5 | reveng | Test class diagram Mermaid | parses | todo
-T-0264 | 5 | reveng | Render OOP class diagram PNG | PNG written | todo
-T-0265 | 5 | reveng | God-Node analysis writeup (why these are god nodes) | writeup md | todo
-T-0266 | 5 | reveng | Write failing test for god-node analysis section (red) | test fails | todo
-T-0267 | 5 | reveng | Implement god-node analysis generator (green) | section populated | todo
-T-0268 | 5 | reveng | Centrality analysis writeup (interpret rankings) | writeup md | todo
-T-0269 | 5 | reveng | Test centrality analysis section | contains top-K | todo
-T-0270 | 5 | reveng | Community/responsibility mapping writeup | writeup md | todo
-T-0271 | 5 | reveng | Test community writeup | communities described | todo
-T-0272 | 5 | reveng | Assemble reports/reverse_engineering.md (full doc) | doc assembled | todo
-T-0273 | 5 | reveng | Embed block diagram + class diagram + PNG links in report | embeds present | todo
-T-0274 | 5 | reveng | Test report embeds resolve | links valid | todo
-T-0275 | 5 | reveng | Mark each claim with evidence tier (Extracted/Inferred/Ambiguous) | claims tiered | todo
-T-0276 | 5 | reveng | Test all claims carry a tier | 100% tagged | todo
-T-0277 | 5 | reveng | Add data-flow narrative (entry points -> god nodes) | narrative present | todo
-T-0278 | 5 | reveng | Test data-flow section | mentions entry points | todo
-T-0279 | 5 | reveng | Add CLI subcommand `reveng build` | CLI builds report | todo
-T-0280 | 5 | reveng | Test `reveng build` end-to-end | report + diagrams produced | todo
-T-0281 | 5 | reveng | Sanitize report (strip abs paths/secrets) | no leaks | todo
-T-0282 | 5 | reveng | Test reveng sanitizer | redactions present | todo
-T-0283 | 5 | reveng | Deterministic diagram ordering | stable diff | todo
-T-0284 | 5 | reveng | Test deterministic reveng output | re-run equal | todo
-T-0285 | 5 | reveng | Link reveng report into vault index.md | link present | todo
-T-0286 | 5 | reveng | Test vault link to reveng | resolves | todo
-T-0287 | 5 | reveng | Add suspect-ranking section (likely bug locations) | ranking present | todo
-T-0288 | 5 | reveng | Test suspect ranking section | ordered list | todo
-T-0289 | 5 | reveng | Cross-link suspects to vault suspect pages | links resolve | todo
-T-0290 | 5 | reveng | Add 'honest measurement' caveats to inferred claims | caveats present | todo
-T-0291 | 5 | reveng | Test caveats present on Inferred claims | each flagged | todo
-T-0292 | 5 | reveng | Add diagram legend + tier color key | legend present | todo
-T-0293 | 5 | reveng | Generate PNG thumbnails for embedding | thumbs written | todo
-T-0294 | 5 | reveng | Test thumbnail generation | files present | todo
-T-0295 | 5 | reveng | Add docstrings + type hints across reveng package | ruff/mypy clean | todo
-T-0296 | 5 | reveng | Run coverage gate on reveng package (>=85%) | gate green | todo
-T-0297 | 5 | reveng | Update docs/PRD_reveng.md with implemented interfaces | PRD matches code | todo
-T-0298 | 5 | reveng | Peer-review pass on reverse_engineering.md | review notes addressed | todo
-T-0299 | 5 | reveng | Update reports/ index with reveng artifact | index updated | todo
-T-0300 | 5 | reveng | Commit Phase-5 reverse engineering | commit pushed; CI green | todo
-T-0301 | 5 | reveng | Phase-5 analysis depth task #51: refine interpretation + test | refinement covered | todo
-T-0302 | 5 | reveng | Phase-5 analysis depth task #52: refine interpretation + test | refinement covered | todo
-T-0303 | 5 | reveng | Phase-5 analysis depth task #53: refine interpretation + test | refinement covered | todo
-T-0304 | 5 | reveng | Phase-5 analysis depth task #54: refine interpretation + test | refinement covered | todo
-T-0305 | 5 | reveng | Phase-5 analysis depth task #55: refine interpretation + test | refinement covered | todo
-T-0306 | 5 | reveng | Phase-5 analysis depth task #56: refine interpretation + test | refinement covered | todo
-T-0307 | 5 | reveng | Phase-5 analysis depth task #57: refine interpretation + test | refinement covered | todo
-T-0308 | 5 | reveng | Phase-5 analysis depth task #58: refine interpretation + test | refinement covered | todo
-T-0309 | 5 | reveng | Phase-5 analysis depth task #59: refine interpretation + test | refinement covered | todo
-T-0310 | 5 | reveng | Phase-5 analysis depth task #60: refine interpretation + test | refinement covered | todo
+T-0251 | 5 | reveng | Add src/cosmos77/reveng/analyzer.py skeleton | module imports | done
+T-0252 | 5 | reveng | Write failing test: block diagram model built from graph (red) | test fails | done
+T-0253 | 5 | reveng | Implement block diagram model (components -> blocks) | green | done
+T-0254 | 5 | reveng | Render block diagram as Mermaid | mermaid emitted | done
+T-0255 | 5 | reveng | Test Mermaid block diagram well-formed | parses | done
+T-0256 | 5 | reveng | Render block diagram PNG via mermaid-cli | PNG written | done
+T-0257 | 5 | reveng | Test PNG file produced + non-empty | size>0 | done
+T-0258 | 5 | reveng | Add fallback if mermaid-cli missing (skip+warn) | graceful skip | done
+T-0259 | 5 | reveng | Build OOP schema model (classes, methods, inheritance) | schema dict | done
+T-0260 | 5 | reveng | Write failing test for OOP schema extraction (red) | test fails | done
+T-0261 | 5 | reveng | Implement OOP schema extraction from graph (green) | classes listed | done
+T-0262 | 5 | reveng | Render OOP class diagram as Mermaid | classDiagram emitted | done
+T-0263 | 5 | reveng | Test class diagram Mermaid | parses | done
+T-0264 | 5 | reveng | Render OOP class diagram PNG | PNG written | done
+T-0265 | 5 | reveng | God-Node analysis writeup (why these are god nodes) | writeup md | done
+T-0266 | 5 | reveng | Write failing test for god-node analysis section (red) | test fails | done
+T-0267 | 5 | reveng | Implement god-node analysis generator (green) | section populated | done
+T-0268 | 5 | reveng | Centrality analysis writeup (interpret rankings) | writeup md | done
+T-0269 | 5 | reveng | Test centrality analysis section | contains top-K | done
+T-0270 | 5 | reveng | Community/responsibility mapping writeup | writeup md | done
+T-0271 | 5 | reveng | Test community writeup | communities described | done
+T-0272 | 5 | reveng | Assemble reports/reverse_engineering.md (full doc) | doc assembled | done
+T-0273 | 5 | reveng | Embed block diagram + class diagram + PNG links in report | embeds present | done
+T-0274 | 5 | reveng | Test report embeds resolve | links valid | done
+T-0275 | 5 | reveng | Mark each claim with evidence tier (Extracted/Inferred/Ambiguous) | claims tiered | done
+T-0276 | 5 | reveng | Test all claims carry a tier | 100% tagged | done
+T-0277 | 5 | reveng | Add data-flow narrative (entry points -> god nodes) | narrative present | done
+T-0278 | 5 | reveng | Test data-flow section | mentions entry points | done
+T-0279 | 5 | reveng | Add CLI subcommand `reveng build` | CLI builds report | done
+T-0280 | 5 | reveng | Test `reveng build` end-to-end | report + diagrams produced | done
+T-0281 | 5 | reveng | Sanitize report (strip abs paths/secrets) | no leaks | done
+T-0282 | 5 | reveng | Test reveng sanitizer | redactions present | done
+T-0283 | 5 | reveng | Deterministic diagram ordering | stable diff | done
+T-0284 | 5 | reveng | Test deterministic reveng output | re-run equal | done
+T-0285 | 5 | reveng | Link reveng report into vault index.md | link present | done
+T-0286 | 5 | reveng | Test vault link to reveng | resolves | done
+T-0287 | 5 | reveng | Add suspect-ranking section (likely bug locations) | ranking present | done
+T-0288 | 5 | reveng | Test suspect ranking section | ordered list | done
+T-0289 | 5 | reveng | Cross-link suspects to vault suspect pages | links resolve | done
+T-0290 | 5 | reveng | Add 'honest measurement' caveats to inferred claims | caveats present | done
+T-0291 | 5 | reveng | Test caveats present on Inferred claims | each flagged | done
+T-0292 | 5 | reveng | Add diagram legend + tier color key | legend present | done
+T-0293 | 5 | reveng | Generate PNG thumbnails for embedding | thumbs written | done
+T-0294 | 5 | reveng | Test thumbnail generation | files present | done
+T-0295 | 5 | reveng | Add docstrings + type hints across reveng package | ruff/mypy clean | done
+T-0296 | 5 | reveng | Run coverage gate on reveng package (>=85%) | gate green | done
+T-0297 | 5 | reveng | Update docs/PRD_reveng.md with implemented interfaces | PRD matches code | done
+T-0298 | 5 | reveng | Peer-review pass on reverse_engineering.md | review notes addressed | done
+T-0299 | 5 | reveng | Update reports/ index with reveng artifact | index updated | done
+T-0300 | 5 | reveng | Commit Phase-5 reverse engineering | commit pushed; CI green | done
+T-0301 | 5 | reveng | Phase-5 analysis depth task #51: refine interpretation + test | refinement covered | done
+T-0302 | 5 | reveng | Phase-5 analysis depth task #52: refine interpretation + test | refinement covered | done
+T-0303 | 5 | reveng | Phase-5 analysis depth task #53: refine interpretation + test | refinement covered | done
+T-0304 | 5 | reveng | Phase-5 analysis depth task #54: refine interpretation + test | refinement covered | done
+T-0305 | 5 | reveng | Phase-5 analysis depth task #55: refine interpretation + test | refinement covered | done
+T-0306 | 5 | reveng | Phase-5 analysis depth task #56: refine interpretation + test | refinement covered | done
+T-0307 | 5 | reveng | Phase-5 analysis depth task #57: refine interpretation + test | refinement covered | done
+T-0308 | 5 | reveng | Phase-5 analysis depth task #58: refine interpretation + test | refinement covered | done
+T-0309 | 5 | reveng | Phase-5 analysis depth task #59: refine interpretation + test | refinement covered | done
+T-0310 | 5 | reveng | Phase-5 analysis depth task #60: refine interpretation + test | refinement covered | done
 
 ## Phase 6 — Graph-guided LangGraph agent (state/nodes/graph/llm, caps, ledger)
 
