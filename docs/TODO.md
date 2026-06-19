@@ -654,46 +654,46 @@ T-0605 | 10 | report | Final consistency pass across all reports | consistent | 
 
 ## Phase 11 — QA gauntlet + acceptance audit C1–C15
 
-T-0606 | 11 | qa | Run full test suite (pytest) clean | all green | todo
-T-0607 | 11 | qa | Run coverage gate project-wide (>=85%) | gate green | todo
-T-0608 | 11 | qa | Run ruff lint + format check | clean | todo
-T-0609 | 11 | qa | Run mypy/type check | clean | todo
-T-0610 | 11 | qa | Run pre-commit on all files | passes | todo
-T-0611 | 11 | qa | Run secret scan across repo | no secrets | todo
-T-0612 | 11 | qa | Run link checker across all docs+vault+README | 0 broken links | todo
-T-0613 | 11 | qa | Verify deterministic re-run of full pipeline | stable | todo
-T-0614 | 11 | qa | Verify isolated venv not committed/leaked | clean | todo
-T-0615 | 11 | qa | Verify all artifacts sanitized (no abs paths) | clean | todo
-T-0616 | 11 | qa | Verify evidence tiers present across all outputs | tiers everywhere | todo
-T-0617 | 11 | qa | Run CI on clean clone (fresh checkout) | CI green | todo
-T-0618 | 11 | audit | Acceptance audit C1: verify criterion C1 met with evidence | C1 pass + evidence linked | todo
-T-0619 | 11 | audit | Acceptance audit C2: verify criterion C2 met with evidence | C2 pass + evidence linked | todo
-T-0620 | 11 | audit | Acceptance audit C3: verify criterion C3 met with evidence | C3 pass + evidence linked | todo
-T-0621 | 11 | audit | Acceptance audit C4: verify criterion C4 met with evidence | C4 pass + evidence linked | todo
-T-0622 | 11 | audit | Acceptance audit C5: verify criterion C5 met with evidence | C5 pass + evidence linked | todo
-T-0623 | 11 | audit | Acceptance audit C6: verify criterion C6 met with evidence | C6 pass + evidence linked | todo
-T-0624 | 11 | audit | Acceptance audit C7: verify criterion C7 met with evidence | C7 pass + evidence linked | todo
-T-0625 | 11 | audit | Acceptance audit C8: verify criterion C8 met with evidence | C8 pass + evidence linked | todo
-T-0626 | 11 | audit | Acceptance audit C9: verify criterion C9 met with evidence | C9 pass + evidence linked | todo
-T-0627 | 11 | audit | Acceptance audit C10: verify criterion C10 met with evidence | C10 pass + evidence linked | todo
-T-0628 | 11 | audit | Acceptance audit C11: verify criterion C11 met with evidence | C11 pass + evidence linked | todo
-T-0629 | 11 | audit | Acceptance audit C12: verify criterion C12 met with evidence | C12 pass + evidence linked | todo
-T-0630 | 11 | audit | Acceptance audit C13: verify criterion C13 met with evidence | C13 pass + evidence linked | todo
-T-0631 | 11 | audit | Acceptance audit C14: verify criterion C14 met with evidence | C14 pass + evidence linked | todo
-T-0632 | 11 | audit | Acceptance audit C15: verify criterion C15 met with evidence | C15 pass + evidence linked | todo
-T-0633 | 11 | qa | Build acceptance matrix (C1-C15 status table) | matrix complete | todo
-T-0634 | 11 | qa | Cross-check acceptance matrix vs PRD success criteria | aligned | todo
-T-0635 | 11 | qa | Fix any audit gaps found (triage list) | gaps closed | todo
-T-0636 | 11 | qa | Re-run gauntlet after gap fixes | all green | todo
-T-0637 | 11 | qa | Verify token-comparison claims reproducible | reproduced | todo
-T-0638 | 11 | qa | Verify bug-fix FAIL->PASS on fresh runner | PASS confirmed | todo
-T-0639 | 11 | qa | Final no-overclaim review (honest measurement) | claims supported | todo
-T-0640 | 11 | qa | Write reports/qa_report.md (gauntlet results) | report written | todo
-T-0641 | 11 | qa | Commit Phase-11 QA + audit | commit pushed; CI green | todo
-T-0642 | 11 | qa | Phase-11 QA hardening task #37: extra check + fix | check covered | todo
-T-0643 | 11 | qa | Phase-11 QA hardening task #38: extra check + fix | check covered | todo
-T-0644 | 11 | qa | Phase-11 QA hardening task #39: extra check + fix | check covered | todo
-T-0645 | 11 | qa | Phase-11 QA hardening task #40: extra check + fix | check covered | todo
+T-0606 | 11 | qa | Run full test suite (pytest) clean | all green | done
+T-0607 | 11 | qa | Run coverage gate project-wide (>=85%) | gate green | done
+T-0608 | 11 | qa | Run ruff lint + format check | clean | done
+T-0609 | 11 | qa | Run mypy/type check | clean | done
+T-0610 | 11 | qa | Run pre-commit on all files | passes | done
+T-0611 | 11 | qa | Run secret scan across repo | no secrets | done
+T-0612 | 11 | qa | Run link checker across all docs+vault+README | 0 broken links | done
+T-0613 | 11 | qa | Verify deterministic re-run of full pipeline | stable | done
+T-0614 | 11 | qa | Verify isolated venv not committed/leaked | clean | done
+T-0615 | 11 | qa | Verify all artifacts sanitized (no abs paths) | clean | done
+T-0616 | 11 | qa | Verify evidence tiers present across all outputs | tiers everywhere | done
+T-0617 | 11 | qa | Run CI on clean clone (fresh checkout) | CI green | done
+T-0618 | 11 | audit | Acceptance audit C1: verify criterion C1 met with evidence | C1 pass + evidence linked | done
+T-0619 | 11 | audit | Acceptance audit C2: verify criterion C2 met with evidence | C2 pass + evidence linked | done
+T-0620 | 11 | audit | Acceptance audit C3: verify criterion C3 met with evidence | C3 pass + evidence linked | done
+T-0621 | 11 | audit | Acceptance audit C4: verify criterion C4 met with evidence | C4 pass + evidence linked | done
+T-0622 | 11 | audit | Acceptance audit C5: verify criterion C5 met with evidence | C5 pass + evidence linked | done
+T-0623 | 11 | audit | Acceptance audit C6: verify criterion C6 met with evidence | C6 pass + evidence linked | done
+T-0624 | 11 | audit | Acceptance audit C7: verify criterion C7 met with evidence | C7 pass + evidence linked | done
+T-0625 | 11 | audit | Acceptance audit C8: verify criterion C8 met with evidence | C8 pass + evidence linked | done
+T-0626 | 11 | audit | Acceptance audit C9: verify criterion C9 met with evidence | C9 pass + evidence linked | done
+T-0627 | 11 | audit | Acceptance audit C10: verify criterion C10 met with evidence | C10 pass + evidence linked | done
+T-0628 | 11 | audit | Acceptance audit C11: verify criterion C11 met with evidence | C11 pass + evidence linked | done
+T-0629 | 11 | audit | Acceptance audit C12: verify criterion C12 met with evidence | C12 pass + evidence linked | done
+T-0630 | 11 | audit | Acceptance audit C13: verify criterion C13 met with evidence | C13 pass + evidence linked | done
+T-0631 | 11 | audit | Acceptance audit C14: verify criterion C14 met with evidence | C14 pass + evidence linked | done
+T-0632 | 11 | audit | Acceptance audit C15: verify criterion C15 met with evidence | C15 pass + evidence linked | done
+T-0633 | 11 | qa | Build acceptance matrix (C1-C15 status table) | matrix complete | done
+T-0634 | 11 | qa | Cross-check acceptance matrix vs PRD success criteria | aligned | done
+T-0635 | 11 | qa | Fix any audit gaps found (triage list) | gaps closed | done
+T-0636 | 11 | qa | Re-run gauntlet after gap fixes | all green | done
+T-0637 | 11 | qa | Verify token-comparison claims reproducible | reproduced | done
+T-0638 | 11 | qa | Verify bug-fix FAIL->PASS on fresh runner | PASS confirmed | done
+T-0639 | 11 | qa | Final no-overclaim review (honest measurement) | claims supported | done
+T-0640 | 11 | qa | Write reports/qa_report.md (gauntlet results) | report written | done
+T-0641 | 11 | qa | Commit Phase-11 QA + audit | commit pushed; CI green | done
+T-0642 | 11 | qa | Phase-11 QA hardening task #37: extra check + fix | check covered | done
+T-0643 | 11 | qa | Phase-11 QA hardening task #38: extra check + fix | check covered | done
+T-0644 | 11 | qa | Phase-11 QA hardening task #39: extra check + fix | check covered | done
+T-0645 | 11 | qa | Phase-11 QA hardening task #40: extra check + fix | check covered | done
 
 ## Phase 12 — Cover PDF (exercise=4) + tag v1.00 + release + Moodle
 
