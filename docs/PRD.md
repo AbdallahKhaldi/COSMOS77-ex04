@@ -1,6 +1,6 @@
 # PRD — COSMOS77-ex04: Token-Efficient Graph-Guided Reverse Engineering & Debugging
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification (Phase 1)
 
 ## 1. Problem statement (the thesis we must prove)
@@ -18,7 +18,7 @@ folklore "70–95%" — is: **graph-guided, focused-context work beats naive raw
 the SAME bug, measured by tokens consumed, files/units read, iterations, and quality/speed to the
 root cause. A measured 35% saving with a clear methodology beats a fabricated 95%.
 
-## 2. Context — UOH-RL07 Lecture 07 concepts
+## 2. Context — 203.3763 Lecture 07 concepts
 
 The professor's Lecture 07 names the failure modes that make naive raw-file reading degrade on
 real codebases, and the retrieval discipline that fixes them:

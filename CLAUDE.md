@@ -1,7 +1,7 @@
 # CLAUDE.md — Project rules of engagement (binding for every prompt)
 
 HW4 (Graphify/Obsidian reverse-engineering + graph-guided debug agent) for Dr. Yoram
-Segal's UOH-RL07 course. Every prompt inherits these rules. HW4 acceptance criteria
+Segal's 203.3763 course. Every prompt inherits these rules. HW4 acceptance criteria
 (C1–C15) are in ../CLAUDE_CODE_PLAYBOOK.md §1.5. We must PROVE, with honest numbers,
 that graph-guided focused-context work beats naive raw-code reading.
 

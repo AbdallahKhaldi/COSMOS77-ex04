@@ -1,13 +1,13 @@
 # COSMOS77-ex04 — Token-Efficient Graph-Guided Reverse-Engineering & Debugging
 
-> **UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · HW4 Lab Report**
+> **Orchestration of AI Agents (203.3763), Dr. Yoram Segal · HW4 Lab Report**
 
 [![CI](https://github.com/AbdallahKhaldi/COSMOS77-ex04/actions/workflows/ci.yml/badge.svg)](https://github.com/AbdallahKhaldi/COSMOS77-ex04/actions/workflows/ci.yml)
 
 | | |
 | --- | --- |
 | **Authors** | **Abdallah Khaldi** (ID 212389712 / עבדאללה חאלדי) · **Tasneem Natour** (ID 323118794 / תסנים נאטור) |
-| **Course** | UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) |
+| **Course** | Orchestration of AI Agents (203.3763), Dr. Yoram Segal |
 | **Assignment** | HW4 — Graph-Guided Reverse-Engineering + Debug Agent |
 | **Date** | 2026-06-19 |
 | **Repository** | https://github.com/AbdallahKhaldi/COSMOS77-ex04 (public) |
@@ -33,7 +33,7 @@ iterations to root cause. Our measured result: **40.3% fewer tokens and 93.5% fe
 
 - **Abdallah Khaldi** — ID 212389712 (עבדאללה חאלדי)
 - **Tasneem Natour** — ID 323118794 (תסנים נאטור)
-- **Course:** UOH-RL07 — Vibe Coding & AI Agents · Instructor: Dr. Yoram Segal
+- **Course:** Orchestration of AI Agents (203.3763) · Instructor: Dr. Yoram Segal
 - **Assignment:** HW4 · **Date:** 2026-06-19 · **Version:** 1.00
 
 ---

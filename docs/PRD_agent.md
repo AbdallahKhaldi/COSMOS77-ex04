@@ -1,6 +1,6 @@
 # PRD — `agent/`: The Graph-Guided LangGraph Debug Agent (THE CORE)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4
 **Mechanism:** Graph-guided LangGraph + Gemini debug agent · **Maps to:** **C5** (and feeds C6/C8/C15)
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification (Phase 1)
 **Package root:** `src/cosmos77_ex04/agent/` · **Provider:** Google Gemini `gemini-2.5-flash`

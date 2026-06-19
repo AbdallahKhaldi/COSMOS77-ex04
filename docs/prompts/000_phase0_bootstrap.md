@@ -7,7 +7,7 @@
 ## Prompt issued
 
 > Senior engineering pair, deliver HW4 ("Reverse Engineering, Debugging &
-> Token-Efficient Graph-Guided AI with Graphify + Obsidian") for UOH-RL07.
+> Token-Efficient Graph-Guided AI with Graphify + Obsidian") for 203.3763.
 > Authority order: `../CLAUDE_CODE_PLAYBOOK.md` (§1 the 17 rules, §1.5 acceptance
 > C1–C15, §16 the `CLAUDE.md` body), then `./CLAUDE.md`. Phase 0 goal: repo
 > skeleton, tooling, `CLAUDE.md`, git init + remote + first push — **no business

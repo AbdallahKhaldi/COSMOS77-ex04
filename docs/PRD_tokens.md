@@ -1,6 +1,6 @@
 # PRD — `tokens/` Mechanism: THE PROOF (Naive vs Graph-Guided Token Comparison)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4 · COSMOS77-ex04
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4 · COSMOS77-ex04
 **Maps to:** C8 (honest token-savings comparison) + C15 (committed Token Spec Sheet) · **Version:** 1.00
 **Status:** Per-mechanism specification (Phase 8) · **Authors:** Abdallah Khaldi, Tasneem Natour
 

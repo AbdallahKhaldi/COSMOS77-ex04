@@ -1,6 +1,6 @@
 # PRD — `reveng` — Reverse-Engineering Diagrams (Block + OOP) + God-Node Analysis
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4 (Phase 5)
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4 (Phase 5)
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification (Phase 1)
 **Maps to:** **C3** (architectural block diagram), **C4** (OOP schema), **C14** (evidence tiers + God Node vs healthy Hub).
 **Package:** `src/cosmos77_ex04/reveng/` · **SDK entry:** `SDK.extract_diagrams()`

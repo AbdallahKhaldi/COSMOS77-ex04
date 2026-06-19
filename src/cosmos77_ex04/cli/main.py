@@ -19,7 +19,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="cosmos77-rev",
         description=(
-            "Graphify/Obsidian reverse-engineering + graph-guided debug agent for UOH-RL07 HW4."
+            "Graphify/Obsidian reverse-engineering + graph-guided debug agent for 203.3763 HW4."
         ),
     )
     parser.add_argument("command", nargs="?", choices=PIPELINE_STAGES, help="pipeline stage to run")

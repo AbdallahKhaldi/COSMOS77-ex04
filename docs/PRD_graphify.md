@@ -1,6 +1,6 @@
 # PRD — Mechanism: Run Graphify + Parse `graph.json`
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4
 **Project:** COSMOS77-ex04 · **Mechanism owner package:** `src/cosmos77_ex04/graphify/`
 **Maps to acceptance criteria:** **C1** (Graphify run → `graph.json` + `GRAPH_REPORT.md` + `graph.html`)
 and **C14** (Evidence tiers Extracted/Inferred/Ambiguous; God Node vs healthy Hub).

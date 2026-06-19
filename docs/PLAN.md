@@ -1,6 +1,6 @@
 # PLAN — COSMOS77-ex04 Architecture
 
-> HW4 "Reverse Engineering, Debugging & Token-Efficient Graph-Guided AI" (UOH-RL07, Dr. Yoram Segal).
+> HW4 "Reverse Engineering, Debugging & Token-Efficient Graph-Guided AI" (203.3763, Dr. Yoram Segal).
 > Thesis to **prove with measured numbers**: graph-guided, focused-context work beats naive raw-code
 > reading. This document holds the C4 model, the end-to-end run sequence, seven ADRs, and the risk
 > register. Vocabulary is the professor's: `Extracted/Inferred/Ambiguous` edges, `Context Rot`,

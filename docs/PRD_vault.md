@@ -1,6 +1,6 @@
 # PRD — Obsidian Knowledge Vault (mechanism: `vault/`)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4 (COSMOS77-ex04)
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4 (COSMOS77-ex04)
 **Maps to:** acceptance criterion **C2** (vault as an active knowledge space) · supports **C14** (evidence tiers), **C9** (suspect-ranking extension)
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification
 

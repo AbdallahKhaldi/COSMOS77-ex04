@@ -1,6 +1,6 @@
 # PRD — Real Fix + Before/After (code + knowledge) (mechanism: `agent/fix.py`)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4 (COSMOS77-ex04)
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4 (COSMOS77-ex04)
 **Maps to:** acceptance criteria **C6** (a real bug located, root-caused, fixed, test FAIL→PASS) and **C7** (before/after at code AND knowledge level) · supports **C2** (vault update), **C8/C15** (the verified fix anchors the honest ledger)
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification (Phase 7)
 

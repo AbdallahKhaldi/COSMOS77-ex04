@@ -1,6 +1,6 @@
 # PRD — Token Spec Sheet / Gatekeeper Ledger (`shared/gatekeeper.py` + `spec_sheet()`)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4 (COSMOS77-ex04)
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4 (COSMOS77-ex04)
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification
 **Maps to:** acceptance criterion **C15** (Token Spec Sheet committed as a report) · supplies the measured numbers behind **C8** (naive-vs-guided token comparison) and **C13** (reproducible run record)
 

@@ -1,6 +1,6 @@
 # PRD — Original Extensions (`run_extensions`)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification (Phase 9)
 **Maps to acceptance criteria:** **C9** (≥1 original extension per part) · supports **C2** (vault), **C3/C14** (architecture, God Node vs Hub), **C7** (before/after at knowledge level)
 

@@ -1,7 +1,7 @@
 [project]
 name = "cosmos77-ex04"
 version = "1.00"
-description = "UOH-RL07 HW4: reverse-engineer a buggy BugsInPy project with Graphify + Obsidian, then a graph-guided LangGraph agent finds + fixes a real bug and proves it used fewer tokens than naive raw-file reading (vibe-coded with Claude Code)."
+description = "203.3763 HW4: reverse-engineer a buggy BugsInPy project with Graphify + Obsidian, then a graph-guided LangGraph agent finds + fixes a real bug and proves it used fewer tokens than naive raw-file reading (vibe-coded with Claude Code)."
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 license = { text = "MIT" }
@@ -18,7 +18,7 @@ keywords = [
     "token-efficiency",
     "claude-code",
     "vibe-coding",
-    "uoh-rl07",
+    "203.3763",
 ]
 classifiers = [
     "Programming Language :: Python :: 3.11",

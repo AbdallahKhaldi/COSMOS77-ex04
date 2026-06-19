@@ -1,4 +1,4 @@
-# TODO — COSMOS77-ex04 (UOH-RL07 HW4)
+# TODO — COSMOS77-ex04 (203.3763 HW4)
 
 Single source of truth for ALL outstanding work. Each task is ONE line that begins
 literally with `T-NNNN ` (four digits) and is pipe-delimited:
@@ -697,7 +697,7 @@ T-0645 | 11 | qa | Phase-11 QA hardening task #40: extra check + fix | check cov
 
 ## Phase 12 — Cover PDF (exercise=4) + tag v1.00 + release + Moodle
 
-T-0646 | 12 | release | Draft cover sheet content (course UOH-RL07, exercise=4, student) | draft ready | done
+T-0646 | 12 | release | Draft cover sheet content (course 203.3763, exercise=4, student) | draft ready | done
 T-0647 | 12 | release | Set exercise number = 4 on cover sheet | exercise=4 set | done
 T-0648 | 12 | release | Generate cover PDF (render to PDF) | PDF produced | done
 T-0649 | 12 | release | Verify cover PDF metadata (exercise=4, title) | metadata correct | done
@@ -714,7 +714,7 @@ T-0659 | 12 | release | Attach cover PDF + key artifacts to release | assets att
 T-0660 | 12 | release | Verify release assets download + open | assets valid | done
 T-0661 | 12 | release | Verify CI green on tagged commit | CI green | done
 T-0662 | 12 | release | Prepare Moodle submission (links + PDF) | submission ready | done
-T-0663 | 12 | release | Submit to Moodle (UOH-RL07 exercise 4) | submitted | done
+T-0663 | 12 | release | Submit to Moodle (203.3763 exercise 4) | submitted | done
 T-0664 | 12 | release | Confirm Moodle submission receipt | receipt saved | done
 T-0665 | 12 | release | Archive final artifacts snapshot | archive saved | done
 T-0666 | 12 | release | Write reports/release_notes.md | notes written | done

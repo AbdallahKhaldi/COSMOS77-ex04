@@ -1,6 +1,6 @@
 # PRD — BugsInPy Target Checkout / Test Harness (`prepare_target`)
 
-**Course:** UOH-RL07 — Vibe Coding & AI Agents (Dr. Yoram Segal) · **Assignment:** HW4
+**Course:** Orchestration of AI Agents (203.3763), Dr. Yoram Segal · **Assignment:** HW4
 **Authors:** Abdallah Khaldi, Tasneem Natour · **Version:** 1.00 · **Status:** Specification (Phase 2)
 **Maps to acceptance criteria:** **C6** (a real bug, reproduced via its failing test) · **C13** (isolated environment + reproducible run instructions)
 
