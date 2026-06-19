@@ -17,6 +17,7 @@ from cosmos77_ex04.graphify.model import GraphModel
 from cosmos77_ex04.graphify.report import parse_report
 from cosmos77_ex04.graphify.run import copy_artifacts, out_graph_dir
 from cosmos77_ex04.graphify.run import run_graphify as run_graphify_cli
+from cosmos77_ex04.reveng.extract import extract_diagrams as extract_diagrams_fn
 from cosmos77_ex04.shared.config import Config
 from cosmos77_ex04.shared.gatekeeper import Gatekeeper
 from cosmos77_ex04.target.checkout import BugsInPyHarness, TargetInfo
@@ -90,9 +91,20 @@ class SDK:
         failing_test = self.config.target().get("failing_test", "")
         return build_vault_fn(model, report, obsidian_dir, failing_test=failing_test)
 
-    def extract_diagrams(self) -> Any:
-        """Extract the block diagram + OOP schema (Phase 5)."""
-        raise NotImplementedError("extract_diagrams lands in Phase 5")
+    def extract_diagrams(self) -> dict[str, Any]:
+        """Extract the architectural block diagram + OOP schema + God-Node report."""
+        artifacts_dir = self.repo_root / self.config.paths().get("artifacts_dir", "artifacts")
+        reports_dir = self.repo_root / self.config.paths().get("reports_dir", "reports")
+        target = self.config.target()
+        project = target.get("project", "tqdm")
+        source = (
+            self.repo_root
+            / target.get("workdir", "data/target")
+            / project
+            / target.get("package_subdir", project)
+        )
+        model = GraphModel.from_json(artifacts_dir / "graph.json")
+        return extract_diagrams_fn(model, source, artifacts_dir, reports_dir)
 
     def run_agent(self) -> Any:
         """Run the graph-guided LangGraph debug agent (Phase 6)."""

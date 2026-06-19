@@ -70,6 +70,15 @@ def _dispatch(command: str) -> int:
         )
         print(f"god-node pages: {len(summary['god_nodes'])}")
         return 0
+    if command == "diagrams":
+        summary = sdk.extract_diagrams()
+        print(f"block: {summary['block_png']}  oop: {summary['oop_png']}")
+        print(
+            f"god_nodes: {summary['god_nodes']}, hubs: {summary['hubs']}, "
+            f"classes: {summary['classes']}"
+        )
+        print(f"report: {summary['architecture']}")
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 

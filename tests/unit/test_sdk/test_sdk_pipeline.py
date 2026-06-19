@@ -55,6 +55,24 @@ def test_build_vault_generates_index_and_hot(config):
     assert (repo_root / "obsidian" / "hot.md").exists()
 
 
+def test_extract_diagrams_writes_png_and_report(config):
+    repo_root = config.config_dir.parent
+    artifacts = repo_root / "artifacts"
+    artifacts.mkdir(parents=True, exist_ok=True)
+    (artifacts / "graph.json").write_text(json.dumps(_graph()), encoding="utf-8")
+    src = repo_root / "data" / "target" / "tqdm" / "tqdm"
+    src.mkdir(parents=True, exist_ok=True)
+    (src / "std.py").write_text(
+        "class Bar:\n    pass\nclass Foo(Bar):\n    def run(self):\n        return 1\n",
+        encoding="utf-8",
+    )
+    summary = sdkmod.SDK(config=config).extract_diagrams()
+    assert summary["block_png"].exists()
+    assert summary["oop_png"].exists()
+    assert summary["architecture"].exists()
+    assert summary["classes"] >= 2
+
+
 def test_run_graphify_summarises_graph(config, monkeypatch):
     graph = {
         "nodes": [{"id": "a", "label": "a"}, {"id": "b", "label": "b"}],
