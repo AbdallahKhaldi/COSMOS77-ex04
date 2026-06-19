@@ -1,0 +1,88 @@
+---
+kind: community
+id: 0
+---
+# Community 0 — Community 0
+
+A **Community** of 79 nodes. A **Bridge** links it to others.
+
+## Members
+- [[__init__.py]]
+- tqdm_notebook()
+- tnrange()
+- See tqdm.notebook.tqdm for full documentation
+- A shortcut for `tqdm.notebook.tqdm(xrange(*args), **kwargs)`.     On Python3+, `
+- __main__.py
+- _monitor.py
+- TqdmSynchronisationWarning
+- RuntimeWarning
+- [[TMonitor]]
+- Thread
+- .__init__()
+- .exit()
+- .get_instances()
+- .run()
+- .report()
+- tqdm multi-thread/-process errors which may cause incorrect nesting     but othe
+- Monitoring thread for tqdm bars.     Monitors if tqdm bars are taking too much t
+- _tqdm.py
+- _tqdm_gui.py
+- _tqdm_notebook.py
+- _tqdm_pandas.py
+- tqdm_pandas()
+- Registers the given `tqdm` instance with     `pandas.core.groupby.DataFrameGroup
+- _version.py
+- auto.py
+- autonotebook.py
+- cli.py
+- cast()
+- posix_pipe()
+- main()
+- Params     ------     fin  : file with `read(buf_size : int)` method     fout  :
+- Parameters (internal use only)     ---------     fp  : file-like object for tqdm
+- # TODO: add custom support for some of the following?
+- gui.py
+- GUI progressbar decorator for iterators. Includes a default (x)range iterator pr
+- # TODO: @classmethod: write() on GUI?
+- # TODO: somehow allow the following:
+- notebook.py
+- IPython/Jupyter Notebook progressbar decorator for iterators. Includes a default
+- [[std.py]]
+- TqdmTypeError
+- TypeError
+- TqdmKeyError
+- TqdmWarning
+- Warning
+- TqdmExperimentalWarning
+- FutureWarning
+- [[TqdmDeprecationWarning]]
+- DeprecationWarning
+- TqdmMonitorWarning
+- [[Bar]]
+- .__init__()
+- .__format__()
+- Customisable progressbar decorator for iterators. Includes a default (x)range it
+- base class for all tqdm warnings.      Used for non-external-code-breaking error
+- beta feature, unstable API and behaviour
+- tqdm monitor errors which do not affect external functionality
+- `str.format`-able bar with format specifiers: `[width][type]`      - `width`
+- # TODO: check this doesn't overwrite another fixed bar
+- # TODO: private method
+- test_exceptions()
+- test_bar_formatspec()
+- Test Bar.__format__ spec
+- FormatReplace
+- .__init__()
+- .__format__()
+- [[Comparable]]
+- .__lt__()
+- .__le__()
+- .__eq__()
+- .__ne__()
+- .__gt__()
+- .__ge__()
+- SimpleTextIOWrapper
+- CallbackIOWrapper
+- >>> a = FormatReplace('something')     >>> "{:5d}".format(a)     'something'
+- Assumes child has self._comparable attr/@property
+- Change only `.write()` of the wrapped object by encoding the passed     value an
