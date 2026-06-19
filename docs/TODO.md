@@ -427,61 +427,61 @@ T-0390 | 6 | agent | Phase-6 agent robustness task #80: scenario test + fix | sc
 
 ## Phase 7 — Fix the bug (FAIL->PASS + before/after code + knowledge)
 
-T-0391 | 7 | fix | Confirm baseline: target bug test FAILS (red oracle) | FAIL captured | todo
-T-0392 | 7 | fix | Record before-code snapshot of buggy file(s) | snapshot saved | todo
-T-0393 | 7 | fix | Run agent to localize bug via graph guidance | suspect ranked | todo
-T-0394 | 7 | fix | Capture agent-identified suspect + evidence tier | suspect recorded | todo
-T-0395 | 7 | fix | Cross-check agent suspect vs reveng suspect ranking | agreement noted | todo
-T-0396 | 7 | fix | Derive minimal fix hypothesis from evidence | hypothesis written | todo
-T-0397 | 7 | fix | Implement candidate patch in isolated target copy | patch applied | todo
-T-0398 | 7 | fix | Run target failing test against patched copy | result captured | todo
-T-0399 | 7 | fix | If FAIL: iterate hypothesis (debug loop) | iteration logged | todo
-T-0400 | 7 | fix | Achieve target test FAIL -> PASS | PASS captured | todo
-T-0401 | 7 | fix | Run full target test suite (no regressions) | suite green | todo
-T-0402 | 7 | fix | Capture after-code snapshot of fixed file(s) | snapshot saved | todo
-T-0403 | 7 | fix | Generate unified diff (before/after code) | diff produced | todo
-T-0404 | 7 | fix | Write before/after knowledge note (what changed + why) | note written | todo
-T-0405 | 7 | fix | Link fix to god_node/centrality evidence in note | evidence cited | todo
-T-0406 | 7 | fix | Tag fix-note claims with evidence tiers | tiers present | todo
-T-0407 | 7 | fix | Persist fix artifacts to artifacts/fix/ | files present | todo
-T-0408 | 7 | fix | Write failing test asserting fix harness reports PASS (red) | test fails | todo
-T-0409 | 7 | fix | Implement fix-verification wrapper (green) | reports PASS | todo
-T-0410 | 7 | fix | Test fix-verification wrapper | passes | todo
-T-0411 | 7 | fix | Add regression guard: re-run baseline still FAILS unpatched | FAIL confirmed | todo
-T-0412 | 7 | fix | Test regression guard | confirms FAIL/PASS delta | todo
-T-0413 | 7 | fix | Update vault suspect page with confirmed fix | page updated | todo
-T-0414 | 7 | fix | Update hot.md to mark resolved suspect | hot.md updated | todo
-T-0415 | 7 | fix | Add CLI subcommand `fix apply` + `fix verify` | CLI applies+verifies | todo
-T-0416 | 7 | fix | Test `fix apply`/`fix verify` end-to-end | PASS reported | todo
-T-0417 | 7 | fix | Sanitize fix artifacts (no abs paths/secrets) | no leaks | todo
-T-0418 | 7 | fix | Test fix-artifact sanitizer | redactions present | todo
-T-0419 | 7 | fix | Write reports/fix_report.md (problem, root cause, fix, evidence) | report written | todo
-T-0420 | 7 | fix | Embed before/after diff in fix_report.md | diff embedded | todo
-T-0421 | 7 | fix | Embed test FAIL->PASS evidence in report | logs embedded | todo
-T-0422 | 7 | fix | Document agent decision-ledger excerpt in report | excerpt present | todo
-T-0423 | 7 | fix | Record token/step cost of the fix run | cost recorded | todo
-T-0424 | 7 | fix | Cross-link fix_report into vault + reveng | links resolve | todo
-T-0425 | 7 | fix | Test cross-links | resolve | todo
-T-0426 | 7 | fix | Add 'honest measurement' note (limits of localization) | note present | todo
-T-0427 | 7 | fix | Deterministic fix replay (same patch from same inputs) | replay stable | todo
-T-0428 | 7 | fix | Test fix replay determinism | re-run equal | todo
-T-0429 | 7 | fix | Validate diff applies cleanly to fresh checkout | apply succeeds | todo
-T-0430 | 7 | fix | Test clean-apply on fresh checkout | applies+PASS | todo
-T-0431 | 7 | fix | Add minimality check (no unrelated edits) | diff minimal | todo
-T-0432 | 7 | fix | Test minimality (line-count bound) | within bound | todo
-T-0433 | 7 | fix | Run coverage gate on fix module (>=85%) | gate green | todo
-T-0434 | 7 | fix | Add docstrings + type hints across fix module | ruff/mypy clean | todo
-T-0435 | 7 | fix | Update docs/PRD_fix.md with implemented interfaces | PRD matches code | todo
-T-0436 | 7 | fix | Peer-review fix_report.md | review addressed | todo
-T-0437 | 7 | fix | Update CHANGELOG with fix entry | entry present | todo
-T-0438 | 7 | fix | Commit Phase-7 bug fix + report | commit pushed; CI green | todo
-T-0439 | 7 | fix | Verify CI runs fix-verification on clean runner | CI green | todo
-T-0440 | 7 | fix | Capture screenshot/log of PASS for README | artifact saved | todo
-T-0441 | 7 | fix | Record before/after metrics (tests passing count) | metrics recorded | todo
-T-0442 | 7 | fix | Confirm no secrets in committed fix artifacts | scan clean | todo
-T-0443 | 7 | fix | Tag fix milestone note in reports/ | milestone noted | todo
-T-0444 | 7 | fix | Reconcile fix suspect with Phase-3 god_nodes list | reconciled | todo
-T-0445 | 7 | fix | Phase-7 fix validation task #55: extra check + test | check covered | todo
+T-0391 | 7 | fix | Confirm baseline: target bug test FAILS (red oracle) | FAIL captured | done
+T-0392 | 7 | fix | Record before-code snapshot of buggy file(s) | snapshot saved | done
+T-0393 | 7 | fix | Run agent to localize bug via graph guidance | suspect ranked | done
+T-0394 | 7 | fix | Capture agent-identified suspect + evidence tier | suspect recorded | done
+T-0395 | 7 | fix | Cross-check agent suspect vs reveng suspect ranking | agreement noted | done
+T-0396 | 7 | fix | Derive minimal fix hypothesis from evidence | hypothesis written | done
+T-0397 | 7 | fix | Implement candidate patch in isolated target copy | patch applied | done
+T-0398 | 7 | fix | Run target failing test against patched copy | result captured | done
+T-0399 | 7 | fix | If FAIL: iterate hypothesis (debug loop) | iteration logged | done
+T-0400 | 7 | fix | Achieve target test FAIL -> PASS | PASS captured | done
+T-0401 | 7 | fix | Run full target test suite (no regressions) | suite green | done
+T-0402 | 7 | fix | Capture after-code snapshot of fixed file(s) | snapshot saved | done
+T-0403 | 7 | fix | Generate unified diff (before/after code) | diff produced | done
+T-0404 | 7 | fix | Write before/after knowledge note (what changed + why) | note written | done
+T-0405 | 7 | fix | Link fix to god_node/centrality evidence in note | evidence cited | done
+T-0406 | 7 | fix | Tag fix-note claims with evidence tiers | tiers present | done
+T-0407 | 7 | fix | Persist fix artifacts to artifacts/fix/ | files present | done
+T-0408 | 7 | fix | Write failing test asserting fix harness reports PASS (red) | test fails | done
+T-0409 | 7 | fix | Implement fix-verification wrapper (green) | reports PASS | done
+T-0410 | 7 | fix | Test fix-verification wrapper | passes | done
+T-0411 | 7 | fix | Add regression guard: re-run baseline still FAILS unpatched | FAIL confirmed | done
+T-0412 | 7 | fix | Test regression guard | confirms FAIL/PASS delta | done
+T-0413 | 7 | fix | Update vault suspect page with confirmed fix | page updated | done
+T-0414 | 7 | fix | Update hot.md to mark resolved suspect | hot.md updated | done
+T-0415 | 7 | fix | Add CLI subcommand `fix apply` + `fix verify` | CLI applies+verifies | done
+T-0416 | 7 | fix | Test `fix apply`/`fix verify` end-to-end | PASS reported | done
+T-0417 | 7 | fix | Sanitize fix artifacts (no abs paths/secrets) | no leaks | done
+T-0418 | 7 | fix | Test fix-artifact sanitizer | redactions present | done
+T-0419 | 7 | fix | Write reports/fix_report.md (problem, root cause, fix, evidence) | report written | done
+T-0420 | 7 | fix | Embed before/after diff in fix_report.md | diff embedded | done
+T-0421 | 7 | fix | Embed test FAIL->PASS evidence in report | logs embedded | done
+T-0422 | 7 | fix | Document agent decision-ledger excerpt in report | excerpt present | done
+T-0423 | 7 | fix | Record token/step cost of the fix run | cost recorded | done
+T-0424 | 7 | fix | Cross-link fix_report into vault + reveng | links resolve | done
+T-0425 | 7 | fix | Test cross-links | resolve | done
+T-0426 | 7 | fix | Add 'honest measurement' note (limits of localization) | note present | done
+T-0427 | 7 | fix | Deterministic fix replay (same patch from same inputs) | replay stable | done
+T-0428 | 7 | fix | Test fix replay determinism | re-run equal | done
+T-0429 | 7 | fix | Validate diff applies cleanly to fresh checkout | apply succeeds | done
+T-0430 | 7 | fix | Test clean-apply on fresh checkout | applies+PASS | done
+T-0431 | 7 | fix | Add minimality check (no unrelated edits) | diff minimal | done
+T-0432 | 7 | fix | Test minimality (line-count bound) | within bound | done
+T-0433 | 7 | fix | Run coverage gate on fix module (>=85%) | gate green | done
+T-0434 | 7 | fix | Add docstrings + type hints across fix module | ruff/mypy clean | done
+T-0435 | 7 | fix | Update docs/PRD_fix.md with implemented interfaces | PRD matches code | done
+T-0436 | 7 | fix | Peer-review fix_report.md | review addressed | done
+T-0437 | 7 | fix | Update CHANGELOG with fix entry | entry present | done
+T-0438 | 7 | fix | Commit Phase-7 bug fix + report | commit pushed; CI green | done
+T-0439 | 7 | fix | Verify CI runs fix-verification on clean runner | CI green | done
+T-0440 | 7 | fix | Capture screenshot/log of PASS for README | artifact saved | done
+T-0441 | 7 | fix | Record before/after metrics (tests passing count) | metrics recorded | done
+T-0442 | 7 | fix | Confirm no secrets in committed fix artifacts | scan clean | done
+T-0443 | 7 | fix | Tag fix milestone note in reports/ | milestone noted | done
+T-0444 | 7 | fix | Reconcile fix suspect with Phase-3 god_nodes list | reconciled | done
+T-0445 | 7 | fix | Phase-7 fix validation task #55: extra check + test | check covered | done
 
 ## Phase 8 — Token comparison (naive baseline vs guided, chart, honest narrative)
 
