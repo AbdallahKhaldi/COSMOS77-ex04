@@ -218,66 +218,66 @@ T-0190 | 3 | graphify | Phase-3 graph robustness task #60: edge case + regressio
 
 ## Phase 4 — Obsidian vault (index nav hub + hot.md + component/suspect pages)
 
-T-0191 | 4 | vault | Add src/cosmos77/vault/builder.py skeleton (vault generator) | module imports | todo
-T-0192 | 4 | vault | Define vault layout (index.md, hot.md, components/, suspects/) | layout doc | todo
-T-0193 | 4 | vault | Write failing test: index.md nav hub generated (red) | test fails | todo
-T-0194 | 4 | vault | Implement index.md nav hub generator (links to all pages) | green | todo
-T-0195 | 4 | vault | Test index.md contains links to components+suspects | links present | todo
-T-0196 | 4 | vault | Implement hot.md generator (top god_nodes + centrality) | hot.md written | todo
-T-0197 | 4 | vault | Write failing test for hot.md content (red) | test fails | todo
-T-0198 | 4 | vault | Make hot.md test pass (green) | top-K nodes listed | todo
-T-0199 | 4 | vault | Add evidence-tier badges to hot.md entries | tiers shown | todo
-T-0200 | 4 | vault | Implement component page generator (one per module/community) | pages written | todo
-T-0201 | 4 | vault | Write failing test for component page (red) | test fails | todo
-T-0202 | 4 | vault | Make component page test pass (green) | page has summary+links | todo
-T-0203 | 4 | vault | Implement suspect page generator (per god_node/suspect) | pages written | todo
-T-0204 | 4 | vault | Write failing test for suspect page (red) | test fails | todo
-T-0205 | 4 | vault | Make suspect page test pass (green) | page has evidence+links | todo
-T-0206 | 4 | vault | Implement wikilink helper [[Page]] with slugging | links resolve | todo
-T-0207 | 4 | vault | Test wikilink slugging + dedupe | no broken links | todo
-T-0208 | 4 | vault | Implement backlink section per page | backlinks listed | todo
-T-0209 | 4 | vault | Test backlink generation | reciprocal links | todo
-T-0210 | 4 | vault | Implement frontmatter (tags, tier, centrality) per page | YAML frontmatter valid | todo
-T-0211 | 4 | vault | Test frontmatter parses as YAML | valid YAML | todo
-T-0212 | 4 | vault | Implement vault sanitize (strip abs paths/secrets) | no leaks | todo
-T-0213 | 4 | vault | Test vault sanitizer | redactions present | todo
-T-0214 | 4 | vault | Add Mermaid mini-graph embed to component pages | mermaid block present | todo
-T-0215 | 4 | vault | Test Mermaid block well-formed | parses | todo
-T-0216 | 4 | vault | Add 'Extracted/Inferred/Ambiguous' legend to index.md | legend present | todo
-T-0217 | 4 | vault | Implement orphans page (degree-0 nodes) | page written | todo
-T-0218 | 4 | vault | Test orphans page | lists orphans | todo
-T-0219 | 4 | vault | Add CLI subcommand `vault build` | CLI builds vault | todo
-T-0220 | 4 | vault | Test `vault build` end-to-end on fixture | vault dir populated | todo
-T-0221 | 4 | vault | Validate vault: every link target exists (link checker) | 0 broken links | todo
-T-0222 | 4 | vault | Write failing test for link checker (red) | test fails | todo
-T-0223 | 4 | vault | Implement link checker (green) | detects broken link | todo
-T-0224 | 4 | vault | Add stable ordering (sorted) for deterministic vault output | diff stable | todo
-T-0225 | 4 | vault | Test deterministic vault build (re-run equals) | byte-identical | todo
-T-0226 | 4 | vault | Add per-page 'last-built' + provenance note | provenance present | todo
-T-0227 | 4 | vault | Add cross-links hot.md <-> suspects <-> components | links bidirectional | todo
-T-0228 | 4 | vault | Test cross-link integrity | all resolve | todo
-T-0229 | 4 | vault | Add tag index page (group pages by tag) | tag index written | todo
-T-0230 | 4 | vault | Test tag index | tags grouped | todo
-T-0231 | 4 | vault | Embed centrality table into hot.md as markdown table | table present | todo
-T-0232 | 4 | vault | Test centrality table rendering | rows match data | todo
-T-0233 | 4 | vault | Add 'how to read this vault' note to index.md | note present | todo
-T-0234 | 4 | vault | Snapshot generated vault to obsidian/vault/ | files present | todo
-T-0235 | 4 | vault | Test vault snapshot file count | count matches pages | todo
-T-0236 | 4 | vault | Add docstrings + type hints across vault package | ruff/mypy clean | todo
-T-0237 | 4 | vault | Run coverage gate on vault package (>=85%) | gate green | todo
-T-0238 | 4 | vault | Update docs/PRD_vault.md with implemented interfaces | PRD matches code | todo
-T-0239 | 4 | vault | Update reports/ with vault build summary | summary written | todo
-T-0240 | 4 | vault | Commit Phase-4 vault generator | commit pushed; CI green | todo
-T-0241 | 4 | vault | Phase-4 vault polish task #51: rendering edge case + test | case covered | todo
-T-0242 | 4 | vault | Phase-4 vault polish task #52: rendering edge case + test | case covered | todo
-T-0243 | 4 | vault | Phase-4 vault polish task #53: rendering edge case + test | case covered | todo
-T-0244 | 4 | vault | Phase-4 vault polish task #54: rendering edge case + test | case covered | todo
-T-0245 | 4 | vault | Phase-4 vault polish task #55: rendering edge case + test | case covered | todo
-T-0246 | 4 | vault | Phase-4 vault polish task #56: rendering edge case + test | case covered | todo
-T-0247 | 4 | vault | Phase-4 vault polish task #57: rendering edge case + test | case covered | todo
-T-0248 | 4 | vault | Phase-4 vault polish task #58: rendering edge case + test | case covered | todo
-T-0249 | 4 | vault | Phase-4 vault polish task #59: rendering edge case + test | case covered | todo
-T-0250 | 4 | vault | Phase-4 vault polish task #60: rendering edge case + test | case covered | todo
+T-0191 | 4 | vault | Add src/cosmos77/vault/builder.py skeleton (vault generator) | module imports | done
+T-0192 | 4 | vault | Define vault layout (index.md, hot.md, components/, suspects/) | layout doc | done
+T-0193 | 4 | vault | Write failing test: index.md nav hub generated (red) | test fails | done
+T-0194 | 4 | vault | Implement index.md nav hub generator (links to all pages) | green | done
+T-0195 | 4 | vault | Test index.md contains links to components+suspects | links present | done
+T-0196 | 4 | vault | Implement hot.md generator (top god_nodes + centrality) | hot.md written | done
+T-0197 | 4 | vault | Write failing test for hot.md content (red) | test fails | done
+T-0198 | 4 | vault | Make hot.md test pass (green) | top-K nodes listed | done
+T-0199 | 4 | vault | Add evidence-tier badges to hot.md entries | tiers shown | done
+T-0200 | 4 | vault | Implement component page generator (one per module/community) | pages written | done
+T-0201 | 4 | vault | Write failing test for component page (red) | test fails | done
+T-0202 | 4 | vault | Make component page test pass (green) | page has summary+links | done
+T-0203 | 4 | vault | Implement suspect page generator (per god_node/suspect) | pages written | done
+T-0204 | 4 | vault | Write failing test for suspect page (red) | test fails | done
+T-0205 | 4 | vault | Make suspect page test pass (green) | page has evidence+links | done
+T-0206 | 4 | vault | Implement wikilink helper [[Page]] with slugging | links resolve | done
+T-0207 | 4 | vault | Test wikilink slugging + dedupe | no broken links | done
+T-0208 | 4 | vault | Implement backlink section per page | backlinks listed | done
+T-0209 | 4 | vault | Test backlink generation | reciprocal links | done
+T-0210 | 4 | vault | Implement frontmatter (tags, tier, centrality) per page | YAML frontmatter valid | done
+T-0211 | 4 | vault | Test frontmatter parses as YAML | valid YAML | done
+T-0212 | 4 | vault | Implement vault sanitize (strip abs paths/secrets) | no leaks | done
+T-0213 | 4 | vault | Test vault sanitizer | redactions present | done
+T-0214 | 4 | vault | Add Mermaid mini-graph embed to component pages | mermaid block present | done
+T-0215 | 4 | vault | Test Mermaid block well-formed | parses | done
+T-0216 | 4 | vault | Add 'Extracted/Inferred/Ambiguous' legend to index.md | legend present | done
+T-0217 | 4 | vault | Implement orphans page (degree-0 nodes) | page written | done
+T-0218 | 4 | vault | Test orphans page | lists orphans | done
+T-0219 | 4 | vault | Add CLI subcommand `vault build` | CLI builds vault | done
+T-0220 | 4 | vault | Test `vault build` end-to-end on fixture | vault dir populated | done
+T-0221 | 4 | vault | Validate vault: every link target exists (link checker) | 0 broken links | done
+T-0222 | 4 | vault | Write failing test for link checker (red) | test fails | done
+T-0223 | 4 | vault | Implement link checker (green) | detects broken link | done
+T-0224 | 4 | vault | Add stable ordering (sorted) for deterministic vault output | diff stable | done
+T-0225 | 4 | vault | Test deterministic vault build (re-run equals) | byte-identical | done
+T-0226 | 4 | vault | Add per-page 'last-built' + provenance note | provenance present | done
+T-0227 | 4 | vault | Add cross-links hot.md <-> suspects <-> components | links bidirectional | done
+T-0228 | 4 | vault | Test cross-link integrity | all resolve | done
+T-0229 | 4 | vault | Add tag index page (group pages by tag) | tag index written | done
+T-0230 | 4 | vault | Test tag index | tags grouped | done
+T-0231 | 4 | vault | Embed centrality table into hot.md as markdown table | table present | done
+T-0232 | 4 | vault | Test centrality table rendering | rows match data | done
+T-0233 | 4 | vault | Add 'how to read this vault' note to index.md | note present | done
+T-0234 | 4 | vault | Snapshot generated vault to obsidian/vault/ | files present | done
+T-0235 | 4 | vault | Test vault snapshot file count | count matches pages | done
+T-0236 | 4 | vault | Add docstrings + type hints across vault package | ruff/mypy clean | done
+T-0237 | 4 | vault | Run coverage gate on vault package (>=85%) | gate green | done
+T-0238 | 4 | vault | Update docs/PRD_vault.md with implemented interfaces | PRD matches code | done
+T-0239 | 4 | vault | Update reports/ with vault build summary | summary written | done
+T-0240 | 4 | vault | Commit Phase-4 vault generator | commit pushed; CI green | done
+T-0241 | 4 | vault | Phase-4 vault polish task #51: rendering edge case + test | case covered | done
+T-0242 | 4 | vault | Phase-4 vault polish task #52: rendering edge case + test | case covered | done
+T-0243 | 4 | vault | Phase-4 vault polish task #53: rendering edge case + test | case covered | done
+T-0244 | 4 | vault | Phase-4 vault polish task #54: rendering edge case + test | case covered | done
+T-0245 | 4 | vault | Phase-4 vault polish task #55: rendering edge case + test | case covered | done
+T-0246 | 4 | vault | Phase-4 vault polish task #56: rendering edge case + test | case covered | done
+T-0247 | 4 | vault | Phase-4 vault polish task #57: rendering edge case + test | case covered | done
+T-0248 | 4 | vault | Phase-4 vault polish task #58: rendering edge case + test | case covered | done
+T-0249 | 4 | vault | Phase-4 vault polish task #59: rendering edge case + test | case covered | done
+T-0250 | 4 | vault | Phase-4 vault polish task #60: rendering edge case + test | case covered | done
 
 ## Phase 5 — Reverse-engineering (block diagram + OOP schema + God-Node/centrality)
 
