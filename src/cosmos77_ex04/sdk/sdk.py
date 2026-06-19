@@ -8,9 +8,14 @@ ledger is created once and shared so the comparison rests on ONE measured ledger
 
 from __future__ import annotations
 
+import subprocess
 from pathlib import Path
 from typing import Any
 
+from cosmos77_ex04.graphify.fallback import write_fallback
+from cosmos77_ex04.graphify.model import GraphModel
+from cosmos77_ex04.graphify.run import copy_artifacts, out_graph_dir
+from cosmos77_ex04.graphify.run import run_graphify as run_graphify_cli
 from cosmos77_ex04.shared.config import Config
 from cosmos77_ex04.shared.gatekeeper import Gatekeeper
 from cosmos77_ex04.target.checkout import BugsInPyHarness, TargetInfo
@@ -50,9 +55,29 @@ class SDK:
                 harness.bug_id = bugs[0]
         return harness.prepare()
 
-    def run_graphify(self) -> Any:
-        """Run Graphify + parse graph.json (Phase 3)."""
-        raise NotImplementedError("run_graphify lands in Phase 3")
+    def run_graphify(self, *, force: bool = False) -> dict[str, Any]:
+        """Run Graphify on the target source (DIY fallback) and summarise the graph."""
+        target = self.config.target()
+        project = target.get("project", "tqdm")
+        project_dir = self.repo_root / target.get("workdir", "data/target") / project
+        source = project_dir / target.get("package_subdir", project)
+        work_dir = self.repo_root / "data" / "graphify"
+        artifacts_dir = self.repo_root / self.config.paths().get("artifacts_dir", "artifacts")
+        try:
+            run_graphify_cli(
+                source, work_dir, artifacts_dir, backend=self.config.active_provider(), force=force
+            )
+        except (OSError, subprocess.SubprocessError):
+            write_fallback(source, out_graph_dir(work_dir) / "graph.json")
+            copy_artifacts(out_graph_dir(work_dir), artifacts_dir)
+        model = GraphModel.from_json(artifacts_dir / "graph.json")
+        return {
+            "nodes": len(model.nodes),
+            "edges": len(model.edges),
+            "communities": len(model.communities()),
+            "tiers": model.edges_by_tier(),
+            "god_nodes": [model.label_of(nid) for nid, _ in model.god_nodes(5)],
+        }
 
     def build_vault(self) -> Any:
         """Generate the Obsidian vault (Phase 4)."""

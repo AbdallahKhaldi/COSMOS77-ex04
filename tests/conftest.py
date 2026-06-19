@@ -13,6 +13,7 @@ _SETUP = {
     "target": {
         "source": "bugsinpy",
         "project": "tqdm",
+        "package_subdir": "tqdm",
         "bug_id": 1,
         "python_version": "3.8.20",
         "workdir": "data/target",

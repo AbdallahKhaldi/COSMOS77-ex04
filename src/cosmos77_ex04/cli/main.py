@@ -53,6 +53,15 @@ def _dispatch(command: str) -> int:
         print(f"python: {info.bug.python_version or 'n/a'}  test: {verdict}")
         print(f"token_ledger: {sdk.spec_sheet()}")
         return 0
+    if command == "graphify":
+        summary = sdk.run_graphify()
+        print(
+            f"graph: {summary['nodes']} nodes, {summary['edges']} edges, "
+            f"{summary['communities']} communities"
+        )
+        print(f"tiers: {summary['tiers']}")
+        print(f"god_nodes: {summary['god_nodes']}")
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 
