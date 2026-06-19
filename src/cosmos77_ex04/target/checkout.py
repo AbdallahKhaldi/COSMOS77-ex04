@@ -10,6 +10,7 @@ project (rule 5). The bug's failing test is run directly in that venv because
 
 from __future__ import annotations
 
+import shutil
 import subprocess
 from collections.abc import Callable
 from dataclasses import dataclass
@@ -109,8 +110,14 @@ class BugsInPyHarness:
         """Build the per-bug isolated venv and install the target's deps."""
         return self._exec(cli.compile_cmd(), cwd=self.project_dir)
 
+    def _clear_pycache(self) -> None:
+        """Delete ``__pycache__`` so a reverted/applied source change isn't masked by stale .pyc."""
+        for cache in self.project_dir.rglob("__pycache__"):
+            shutil.rmtree(cache, ignore_errors=True)
+
     def run_test(self) -> BugTestResult:
         """Run the bug's failing test in the venv; ``passed`` is True only on exit 0."""
+        self._clear_pycache()
         args = read_test_command(self.project_dir)
         proc = self._exec([str(self.venv_python), "-m", "pytest", *args], cwd=self.project_dir)
         output = (getattr(proc, "stdout", "") or "") + (getattr(proc, "stderr", "") or "")

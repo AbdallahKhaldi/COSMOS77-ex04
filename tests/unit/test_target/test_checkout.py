@@ -87,6 +87,16 @@ def test_run_test_reports_failure(tmp_path):
     assert pytest_cmds and pytest_cmds[0][-1] == "tqdm/tests/x.py::t"
 
 
+def test_run_test_clears_stale_pycache(tmp_path):
+    project_dir = tmp_path / "target" / "tqdm"
+    cache = project_dir / "tqdm" / "__pycache__"
+    cache.mkdir(parents=True)
+    (cache / "contrib.pyc").write_text("stale", encoding="utf-8")
+    (project_dir / "bugsinpy_run_test.sh").write_text("python3 -m pytest a::b\n", encoding="utf-8")
+    _harness(tmp_path, runner=make_runner(1, "1 failed")).run_test()
+    assert not cache.exists()  # cleared before the run so the .pyc can't mask source edits
+
+
 def test_ensure_clone_skips_when_present(tmp_path):
     (tmp_path / "BugsInPy").mkdir()
     rec: list = []
