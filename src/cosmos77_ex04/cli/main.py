@@ -117,6 +117,12 @@ def _dispatch(command: str) -> int:
         print(f"orphans: {result['orphans']} ({result['orphan_count']} orphans)")
         print(f"impact: {result['impact']}")
         return 0
+    if command == "run":
+        sdk.run()
+        print("run: full pipeline complete")
+        print("see obsidian/ (vault), reports/ (BUG_ANALYSIS, ARCHITECTURE, TOKEN_COMPARISON,")
+        print("SPEC_SHEET, ORPHANS, IMPACT) and artifacts/ (graph.json, diagrams, chart).")
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 

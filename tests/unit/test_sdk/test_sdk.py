@@ -76,3 +76,32 @@ def test_spec_sheet_returns_ledger(config):
 
 def test_repo_root_is_config_parent(config, config_dir):
     assert sdkmod.SDK(config=config).repo_root == config_dir.parent
+
+
+def test_run_invokes_every_stage(config, monkeypatch):
+    sdk = sdkmod.SDK(config=config)
+    stages = [
+        "prepare_target",
+        "run_graphify",
+        "build_vault",
+        "extract_diagrams",
+        "run_agent",
+        "apply_fix",
+        "compare_tokens",
+        "run_extensions",
+    ]
+    for name in stages:
+        monkeypatch.setattr(sdk, name, lambda n=name: f"ran-{n}")
+    out = sdk.run()
+    assert set(out) == {
+        "target",
+        "graph",
+        "vault",
+        "diagrams",
+        "agent",
+        "fix",
+        "compare",
+        "extensions",
+    }
+    assert out["agent"] == "ran-run_agent"
+    assert out["fix"] == "ran-apply_fix"

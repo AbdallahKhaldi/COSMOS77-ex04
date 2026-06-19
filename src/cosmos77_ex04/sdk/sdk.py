@@ -1,9 +1,7 @@
 """The single business-logic entry point (CLAUDE.md rule 2).
 
-The CLI, the LangGraph agent, the token harness, and the tests all go through
-``class SDK`` — one audited surface. Each pipeline stage is one method; stages
-land in their phase (a ``NotImplementedError`` until then). The Gatekeeper token
-ledger is created once and shared so the comparison rests on ONE measured ledger.
+The CLI, the agent, the token harness, and the tests all go through ``class SDK``
+— one audited surface, one method per pipeline stage.
 """
 
 from __future__ import annotations
@@ -132,6 +130,19 @@ class SDK:
     def run_extensions(self) -> dict[str, Any]:
         """Run the original extensions (centrality, dynamic hot.md, orphans, impact)."""
         return run_extensions_fn(self.config, self.repo_root)
+
+    def run(self) -> dict[str, Any]:
+        """End-to-end pipeline: target → graph → vault → diagrams → agent → fix → compare → extensions."""
+        return {
+            "target": self.prepare_target(),
+            "graph": self.run_graphify(),
+            "vault": self.build_vault(),
+            "diagrams": self.extract_diagrams(),
+            "agent": self.run_agent(),
+            "fix": self.apply_fix(),
+            "compare": self.compare_tokens(),
+            "extensions": self.run_extensions(),
+        }
 
     def spec_sheet(self) -> dict[str, Any]:
         """Return the measured token ledger (the Spec Sheet aggregate, C15)."""
