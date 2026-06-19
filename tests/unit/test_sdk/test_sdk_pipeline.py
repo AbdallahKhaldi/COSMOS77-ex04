@@ -1,4 +1,4 @@
-"""Tests for the SDK pipeline stages — graphify + vault (rule 6, mocked I/O)."""
+"""Tests for the SDK pipeline stages — graphify + vault + diagrams (rule 6)."""
 
 from __future__ import annotations
 

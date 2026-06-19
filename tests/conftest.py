@@ -20,7 +20,13 @@ _SETUP = {
         "isolation": "venv",
     },
     "graphify": {"out_dir": "graphify-out", "obsidian": True, "wiki": True},
-    "agent": {"framework": "langgraph", "max_llm_calls": 6, "recursion_limit": 12},
+    "agent": {
+        "framework": "langgraph",
+        "max_llm_calls": 6,
+        "recursion_limit": 12,
+        "top_k": 6,
+        "max_files": 4,
+    },
     "tokens": {"baseline_mode": "raw_files", "guided_mode": "graph_guided", "measure": ["tokens"]},
     "paths": {"obsidian_dir": "obsidian", "reports_dir": "reports", "artifacts_dir": "artifacts"},
 }

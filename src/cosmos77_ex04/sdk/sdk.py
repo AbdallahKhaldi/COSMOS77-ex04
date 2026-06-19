@@ -12,6 +12,7 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
+from cosmos77_ex04.agent.graph import investigate
 from cosmos77_ex04.graphify.fallback import write_fallback
 from cosmos77_ex04.graphify.model import GraphModel
 from cosmos77_ex04.graphify.report import parse_report
@@ -56,7 +57,12 @@ class SDK:
             bugs = list_bugs(bugsinpy_dir, project)
             if bugs:
                 harness.bug_id = bugs[0]
-        return harness.prepare()
+        info = harness.prepare()
+        output = getattr(getattr(info, "test_result", None), "output", "") or ""
+        out_path = workdir / "_test_output.txt"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(output, encoding="utf-8")
+        return info
 
     def run_graphify(self, *, force: bool = False) -> dict[str, Any]:
         """Run Graphify on the target source (DIY fallback) and summarise the graph."""
@@ -106,9 +112,11 @@ class SDK:
         model = GraphModel.from_json(artifacts_dir / "graph.json")
         return extract_diagrams_fn(model, source, artifacts_dir, reports_dir)
 
-    def run_agent(self) -> Any:
-        """Run the graph-guided LangGraph debug agent (Phase 6)."""
-        raise NotImplementedError("run_agent lands in Phase 6")
+    def run_agent(self) -> dict[str, Any]:
+        """Run the graph-guided LangGraph debug agent on the bug (real Gemini)."""
+        artifacts_dir = self.repo_root / self.config.paths().get("artifacts_dir", "artifacts")
+        model = GraphModel.from_json(artifacts_dir / "graph.json")
+        return investigate(self.config, self.gatekeeper, model, self.repo_root)
 
     def apply_fix(self) -> Any:
         """Apply + verify the fix, FAIL→PASS (Phase 7)."""

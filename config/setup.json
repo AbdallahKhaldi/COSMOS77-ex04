@@ -20,6 +20,8 @@
     "max_llm_calls": 6,
     "recursion_limit": 12,
     "max_output_tokens": 4096,
+    "top_k": 6,
+    "max_files": 4,
     "graph_guided_first": true
   },
   "tokens": {

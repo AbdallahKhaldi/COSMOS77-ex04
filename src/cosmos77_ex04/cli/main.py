@@ -79,6 +79,14 @@ def _dispatch(command: str) -> int:
         )
         print(f"report: {summary['architecture']}")
         return 0
+    if command == "agent":
+        result = sdk.run_agent()
+        print(f"suspects: {result['suspects']}")
+        print(f"files_read ({len(result['files_read'])}): {result['files_read']}")
+        print(f"tokens: {result['tokens']}  iterations: {result['iterations']}")
+        print("--- diagnosis ---")
+        print(result["diagnosis"][:800])
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 
