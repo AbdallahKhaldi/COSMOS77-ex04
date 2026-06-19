@@ -1,11 +1,23 @@
----
-kind: fix-process
----
-# fix-process.md
+# Fix Process — The Change + Verification
 
-1. Reproduce the failing test (the bug-critical area, see [[hot]]).
-2. Localise via Centrality + the God Node neighborhood.
-3. Apply the minimal change; keep Extracted edges intact.
-4. Re-run the test and record the token ledger.
+**File:** `tqdm/contrib/__init__.py`  ·  **Failing test:** `tqdm/tests/tests_contrib.py::test_enumerate`
 
-_(Phase 7 fills the concrete fix steps here.)_
+## The minimal change (unified diff)
+```diff
+--- a/tqdm/contrib/__init__.py
++++ b/tqdm/contrib/__init__.py
+@@ -38,7 +38,7 @@
+         if isinstance(iterable, np.ndarray):
+             return tqdm_class(np.ndenumerate(iterable),
+                               total=total or len(iterable), **tqdm_kwargs)
+-    return enumerate(tqdm_class(iterable, start, **tqdm_kwargs))
++    return enumerate(tqdm_class(iterable, **tqdm_kwargs), start)
+
+
+ def _tzip(iter1, *iter2plus, **tqdm_kwargs):
+```
+
+## Verification (FAIL → PASS)
+- Before the fix: test **FAIL** (the bug).
+- After the fix: test **PASS**.
+- Applied: True.
