@@ -248,6 +248,12 @@ in pre-commit and CI. Over the cap → split (e.g. `checkout.py` + `bugsinpy_cli
 **Consequences:** Forces composition, small testable units, and ≥85% coverage stays reachable. Cost: occasional
 awkward splits — absorbed with base classes / mixins (rule 3) rather than copy-paste.
 
+### ADR-008 — Python substitution + macOS `bugsinpy-test` workaround
+**Status:** Accepted (added in Phase 2 after the live feasibility probe).
+**Context:** `tqdm` bug 1's `bug.info` pins Python **3.6.9**, which is unobtainable on Apple Silicon (uv has no 3.6, pyenv absent). Separately, the `bugsinpy-test` wrapper uses bash-4 `&>>` redirection and dies on macOS's bash-3.2 *before* running pytest.
+**Decision:** Run the target on uv-installed **Python 3.8.20** (tqdm's `setup.py` declares `python_requires='>=2.6'`, so 3.8 is valid), exposed to the framework's hardcoded `python`/`python3` via a two-symlink **pyshim** prepended to PATH (`target/isolation.py`). Bypass the broken `bugsinpy-test` by reading the single failing-test command from the checked-out `bugsinpy_run_test.sh` and running it in the per-bug venv directly (`target/info.read_test_command` + `BugsInPyHarness.run_test`).
+**Consequences:** `prepare-target` reproduces the failing test deterministically on macOS (verified: `tqdm` bug 1 FAILs as expected). The substitution is config-driven (`target.python_version`), so a host that already has 3.6.9 needs no code change. Cost: a small, mocked, macOS-aware isolation layer — documented here for honesty.
+
 ---
 
 ## 4. Risk Register

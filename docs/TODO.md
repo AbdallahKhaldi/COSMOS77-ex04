@@ -42,116 +42,116 @@ T-0020 | 1 | docs | Define guided-retrieval + honest-measurement principles in P
 T-0021 | 1 | docs | PRD_target.md — scope, interfaces, inputs/outputs for BugsInPy target harness | mechanism PRD drafted | done
 T-0022 | 1 | docs | PRD_target.md — DoD, gates, and test matrix for BugsInPy target harness | DoD + gates listed | done
 T-0023 | 1 | docs | PRD_target.md — risks, fallbacks, and open questions for BugsInPy target harness | risks enumerated | done
-T-0024 | 1 | docs | PRD_target.md — review + cross-link from PLAN/PRD for BugsInPy target harness | cross-links resolve | todo
+T-0024 | 1 | docs | PRD_target.md — review + cross-link from PLAN/PRD for BugsInPy target harness | cross-links resolve | done
 T-0025 | 1 | docs | PRD_graphify.md — scope, interfaces, inputs/outputs for Graphify graph extraction | mechanism PRD drafted | done
 T-0026 | 1 | docs | PRD_graphify.md — DoD, gates, and test matrix for Graphify graph extraction | DoD + gates listed | done
 T-0027 | 1 | docs | PRD_graphify.md — risks, fallbacks, and open questions for Graphify graph extraction | risks enumerated | done
-T-0028 | 1 | docs | PRD_graphify.md — review + cross-link from PLAN/PRD for Graphify graph extraction | cross-links resolve | todo
+T-0028 | 1 | docs | PRD_graphify.md — review + cross-link from PLAN/PRD for Graphify graph extraction | cross-links resolve | done
 T-0029 | 1 | docs | PRD_vault.md — scope, interfaces, inputs/outputs for Obsidian knowledge vault | mechanism PRD drafted | done
 T-0030 | 1 | docs | PRD_vault.md — DoD, gates, and test matrix for Obsidian knowledge vault | DoD + gates listed | done
 T-0031 | 1 | docs | PRD_vault.md — risks, fallbacks, and open questions for Obsidian knowledge vault | risks enumerated | done
-T-0032 | 1 | docs | PRD_vault.md — review + cross-link from PLAN/PRD for Obsidian knowledge vault | cross-links resolve | todo
+T-0032 | 1 | docs | PRD_vault.md — review + cross-link from PLAN/PRD for Obsidian knowledge vault | cross-links resolve | done
 T-0033 | 1 | docs | PRD_reveng.md — scope, interfaces, inputs/outputs for Reverse-engineering analysis | mechanism PRD drafted | done
 T-0034 | 1 | docs | PRD_reveng.md — DoD, gates, and test matrix for Reverse-engineering analysis | DoD + gates listed | done
 T-0035 | 1 | docs | PRD_reveng.md — risks, fallbacks, and open questions for Reverse-engineering analysis | risks enumerated | done
-T-0036 | 1 | docs | PRD_reveng.md — review + cross-link from PLAN/PRD for Reverse-engineering analysis | cross-links resolve | todo
+T-0036 | 1 | docs | PRD_reveng.md — review + cross-link from PLAN/PRD for Reverse-engineering analysis | cross-links resolve | done
 T-0037 | 1 | docs | PRD_agent.md — scope, interfaces, inputs/outputs for Graph-guided LangGraph agent | mechanism PRD drafted | done
 T-0038 | 1 | docs | PRD_agent.md — DoD, gates, and test matrix for Graph-guided LangGraph agent | DoD + gates listed | done
 T-0039 | 1 | docs | PRD_agent.md — risks, fallbacks, and open questions for Graph-guided LangGraph agent | risks enumerated | done
-T-0040 | 1 | docs | PRD_agent.md — review + cross-link from PLAN/PRD for Graph-guided LangGraph agent | cross-links resolve | todo
+T-0040 | 1 | docs | PRD_agent.md — review + cross-link from PLAN/PRD for Graph-guided LangGraph agent | cross-links resolve | done
 T-0041 | 1 | docs | PRD_fix.md — scope, interfaces, inputs/outputs for Bug-fix workflow | mechanism PRD drafted | done
 T-0042 | 1 | docs | PRD_fix.md — DoD, gates, and test matrix for Bug-fix workflow | DoD + gates listed | done
 T-0043 | 1 | docs | PRD_fix.md — risks, fallbacks, and open questions for Bug-fix workflow | risks enumerated | done
-T-0044 | 1 | docs | PRD_fix.md — review + cross-link from PLAN/PRD for Bug-fix workflow | cross-links resolve | todo
+T-0044 | 1 | docs | PRD_fix.md — review + cross-link from PLAN/PRD for Bug-fix workflow | cross-links resolve | done
 T-0045 | 1 | docs | PRD_tokens.md — scope, interfaces, inputs/outputs for Token comparison study | mechanism PRD drafted | done
 T-0046 | 1 | docs | PRD_tokens.md — DoD, gates, and test matrix for Token comparison study | DoD + gates listed | done
 T-0047 | 1 | docs | PRD_tokens.md — risks, fallbacks, and open questions for Token comparison study | risks enumerated | done
-T-0048 | 1 | docs | PRD_tokens.md — review + cross-link from PLAN/PRD for Token comparison study | cross-links resolve | todo
+T-0048 | 1 | docs | PRD_tokens.md — review + cross-link from PLAN/PRD for Token comparison study | cross-links resolve | done
 T-0049 | 1 | docs | PRD_extensions.md — scope, interfaces, inputs/outputs for Centrality/hot/orphans/impact extensions | mechanism PRD drafted | done
 T-0050 | 1 | docs | PRD_extensions.md — DoD, gates, and test matrix for Centrality/hot/orphans/impact extensions | DoD + gates listed | done
 T-0051 | 1 | docs | PRD_extensions.md — risks, fallbacks, and open questions for Centrality/hot/orphans/impact extensions | risks enumerated | done
-T-0052 | 1 | docs | PRD_extensions.md — review + cross-link from PLAN/PRD for Centrality/hot/orphans/impact extensions | cross-links resolve | todo
+T-0052 | 1 | docs | PRD_extensions.md — review + cross-link from PLAN/PRD for Centrality/hot/orphans/impact extensions | cross-links resolve | done
 T-0053 | 1 | docs | PRD_report.md — scope, interfaces, inputs/outputs for Lab report + release | mechanism PRD drafted | done
 T-0054 | 1 | docs | PRD_report.md — DoD, gates, and test matrix for Lab report + release | DoD + gates listed | done
 T-0055 | 1 | docs | PRD_report.md — risks, fallbacks, and open questions for Lab report + release | risks enumerated | done
-T-0056 | 1 | docs | PRD_report.md — review + cross-link from PLAN/PRD for Lab report + release | cross-links resolve | todo
-T-0057 | 1 | docs | Phase-1 doc consistency pass #42 (terminology, links, headings) | no broken links; terms consistent | todo
-T-0058 | 1 | docs | Phase-1 doc consistency pass #43 (terminology, links, headings) | no broken links; terms consistent | todo
-T-0059 | 1 | docs | Phase-1 doc consistency pass #44 (terminology, links, headings) | no broken links; terms consistent | todo
-T-0060 | 1 | docs | Phase-1 doc consistency pass #45 (terminology, links, headings) | no broken links; terms consistent | todo
+T-0056 | 1 | docs | PRD_report.md — review + cross-link from PLAN/PRD for Lab report + release | cross-links resolve | done
+T-0057 | 1 | docs | Phase-1 doc consistency pass #42 (terminology, links, headings) | no broken links; terms consistent | done
+T-0058 | 1 | docs | Phase-1 doc consistency pass #43 (terminology, links, headings) | no broken links; terms consistent | done
+T-0059 | 1 | docs | Phase-1 doc consistency pass #44 (terminology, links, headings) | no broken links; terms consistent | done
+T-0060 | 1 | docs | Phase-1 doc consistency pass #45 (terminology, links, headings) | no broken links; terms consistent | done
 
 ## Phase 2 — Shared infra port + BugsInPy target harness (isolated venv)
 
-T-0061 | 2 | infra | Port HW3 logging utility (structured JSON logs) into src/cosmos77/util/logging.py | module imports; emits JSON | todo
-T-0062 | 2 | infra | Write failing test for logging util (red) | test asserts JSON keys; fails | todo
-T-0063 | 2 | infra | Implement logging util to pass test (green) | test passes | todo
-T-0064 | 2 | infra | Refactor logging util + add type hints/docstrings | ruff clean; mypy clean | todo
-T-0065 | 2 | infra | Port config loader (setup.json/providers.json) into src/cosmos77/config.py | loads all configs | todo
-T-0066 | 2 | infra | Write failing test for config loader (red) | test fails on missing key | todo
-T-0067 | 2 | infra | Implement config loader (green) | test passes | todo
-T-0068 | 2 | infra | Add Pydantic models for config schema + validation | invalid config raises | todo
-T-0069 | 2 | infra | Port path resolver (repo-root-relative paths) util | resolves artifacts/ data/ logs/ | todo
-T-0070 | 2 | infra | Write + pass test for path resolver | test passes | todo
-T-0071 | 2 | infra | Port retry/backoff decorator from HW3 | decorator retries N times | todo
-T-0072 | 2 | infra | Test retry decorator (red then green) | flaky-stub test passes | todo
-T-0073 | 2 | infra | Port deterministic seed/RNG helper | seed reproducible | todo
-T-0074 | 2 | infra | Add CLI skeleton (Typer) with sub-commands stubbed | --help lists subcommands | todo
-T-0075 | 2 | infra | Test CLI --help and version | exit 0; version printed | todo
-T-0076 | 2 | target | Pick BugsInPy target project + bug id; record in config/setup.json | target + bug id pinned | todo
-T-0077 | 2 | target | Write src/cosmos77/target/harness.py module skeleton | module imports | todo
-T-0078 | 2 | target | Write failing test: harness checkout of buggy revision (red) | test fails (no checkout) | todo
-T-0079 | 2 | target | Implement BugsInPy checkout (buggy version) in harness | checkout succeeds | todo
-T-0080 | 2 | target | Make checkout test pass (green) | test passes | todo
-T-0081 | 2 | target | Implement isolated venv creation per target (uv venv) | venv created under data/ | todo
-T-0082 | 2 | target | Test isolated venv is separate from project venv | sys.prefix differs | todo
-T-0083 | 2 | target | Install target deps into isolated venv | pip list shows target deps | todo
-T-0084 | 2 | target | Implement compile/import sanity check of target | target imports in venv | todo
-T-0085 | 2 | target | Test import sanity check | test passes | todo
-T-0086 | 2 | target | Implement run-failing-test entrypoint (subprocess into venv) | returns test result obj | todo
-T-0087 | 2 | target | Write failing test for run-failing-test wrapper (red) | test fails | todo
-T-0088 | 2 | target | Implement run wrapper parsing pytest output | parses pass/fail counts | todo
-T-0089 | 2 | target | Make run wrapper test pass (green) | test passes | todo
-T-0090 | 2 | target | Capture baseline: confirm target bug test FAILS | FAIL recorded in artifacts | todo
-T-0091 | 2 | target | Implement fixed-version checkout path (reference) | fixed rev checks out | todo
-T-0092 | 2 | target | Confirm fixed-version test PASSES (reference oracle) | PASS recorded | todo
-T-0093 | 2 | target | Persist baseline result to artifacts/baseline.json | JSON written | todo
-T-0094 | 2 | target | Test baseline persistence round-trip | load==dump | todo
-T-0095 | 2 | target | Add timeout + resource caps to subprocess runner | timeout enforced | todo
-T-0096 | 2 | target | Test timeout cap triggers on hang | TimeoutError raised | todo
-T-0097 | 2 | target | Capture stdout/stderr/return-code into result object | fields populated | todo
-T-0098 | 2 | target | Redact secrets/paths from captured output (sanitize) | no abs home paths leak | todo
-T-0099 | 2 | target | Test sanitizer redaction | redacted strings absent | todo
-T-0100 | 2 | infra | Wire harness into CLI subcommand `target prepare` | CLI prepares target | todo
-T-0101 | 2 | infra | Wire CLI subcommand `target run-test` | CLI runs failing test | todo
-T-0102 | 2 | infra | Add fixture: tmp target sandbox for tests | fixture yields sandbox | todo
-T-0103 | 2 | infra | Add fixture: mocked subprocess for fast unit tests | fixture mocks Popen | todo
-T-0104 | 2 | target | Snapshot target source tree into data/target_src/ (read-only copy) | tree copied | todo
-T-0105 | 2 | target | Test snapshot integrity (file count/hash) | hash matches | todo
-T-0106 | 2 | infra | Add error taxonomy (HarnessError, CheckoutError, TargetTestError) | exceptions defined | todo
-T-0107 | 2 | infra | Test error taxonomy raised on expected failures | each raised in case | todo
-T-0108 | 2 | infra | Add structured run-ledger writer (append-only JSONL) | ledger appends | todo
-T-0109 | 2 | infra | Test run-ledger append + read | entries round-trip | todo
-T-0110 | 2 | infra | Add docstrings + type hints across target package | ruff/mypy clean | todo
-T-0111 | 2 | infra | Run coverage gate on Phase-2 modules (>=85%) | coverage gate green | todo
-T-0112 | 2 | infra | Update docs/PRD_target.md with implemented interfaces | PRD matches code | todo
-T-0113 | 2 | infra | Update reports/ with Phase-2 progress note | note written | todo
-T-0114 | 2 | infra | Commit Phase-2 infra port | commit pushed; CI green | todo
-T-0115 | 2 | infra | Phase-2 hardening task #55: edge-case test + fix (target harness) | new edge case covered | todo
-T-0116 | 2 | infra | Phase-2 hardening task #56: edge-case test + fix (target harness) | new edge case covered | todo
-T-0117 | 2 | infra | Phase-2 hardening task #57: edge-case test + fix (target harness) | new edge case covered | todo
-T-0118 | 2 | infra | Phase-2 hardening task #58: edge-case test + fix (target harness) | new edge case covered | todo
-T-0119 | 2 | infra | Phase-2 hardening task #59: edge-case test + fix (target harness) | new edge case covered | todo
-T-0120 | 2 | infra | Phase-2 hardening task #60: edge-case test + fix (target harness) | new edge case covered | todo
-T-0121 | 2 | infra | Phase-2 hardening task #61: edge-case test + fix (target harness) | new edge case covered | todo
-T-0122 | 2 | infra | Phase-2 hardening task #62: edge-case test + fix (target harness) | new edge case covered | todo
-T-0123 | 2 | infra | Phase-2 hardening task #63: edge-case test + fix (target harness) | new edge case covered | todo
-T-0124 | 2 | infra | Phase-2 hardening task #64: edge-case test + fix (target harness) | new edge case covered | todo
-T-0125 | 2 | infra | Phase-2 hardening task #65: edge-case test + fix (target harness) | new edge case covered | todo
-T-0126 | 2 | infra | Phase-2 hardening task #66: edge-case test + fix (target harness) | new edge case covered | todo
-T-0127 | 2 | infra | Phase-2 hardening task #67: edge-case test + fix (target harness) | new edge case covered | todo
-T-0128 | 2 | infra | Phase-2 hardening task #68: edge-case test + fix (target harness) | new edge case covered | todo
-T-0129 | 2 | infra | Phase-2 hardening task #69: edge-case test + fix (target harness) | new edge case covered | todo
-T-0130 | 2 | infra | Phase-2 hardening task #70: edge-case test + fix (target harness) | new edge case covered | todo
+T-0061 | 2 | infra | Port HW3 logging utility (structured JSON logs) into src/cosmos77/util/logging.py | module imports; emits JSON | done
+T-0062 | 2 | infra | Write failing test for logging util (red) | test asserts JSON keys; fails | done
+T-0063 | 2 | infra | Implement logging util to pass test (green) | test passes | done
+T-0064 | 2 | infra | Refactor logging util + add type hints/docstrings | ruff clean; mypy clean | done
+T-0065 | 2 | infra | Port config loader (setup.json/providers.json) into src/cosmos77/config.py | loads all configs | done
+T-0066 | 2 | infra | Write failing test for config loader (red) | test fails on missing key | done
+T-0067 | 2 | infra | Implement config loader (green) | test passes | done
+T-0068 | 2 | infra | Add Pydantic models for config schema + validation | invalid config raises | done
+T-0069 | 2 | infra | Port path resolver (repo-root-relative paths) util | resolves artifacts/ data/ logs/ | done
+T-0070 | 2 | infra | Write + pass test for path resolver | test passes | done
+T-0071 | 2 | infra | Port retry/backoff decorator from HW3 | decorator retries N times | done
+T-0072 | 2 | infra | Test retry decorator (red then green) | flaky-stub test passes | done
+T-0073 | 2 | infra | Port deterministic seed/RNG helper | seed reproducible | done
+T-0074 | 2 | infra | Add CLI skeleton (Typer) with sub-commands stubbed | --help lists subcommands | done
+T-0075 | 2 | infra | Test CLI --help and version | exit 0; version printed | done
+T-0076 | 2 | target | Pick BugsInPy target project + bug id; record in config/setup.json | target + bug id pinned | done
+T-0077 | 2 | target | Write src/cosmos77/target/harness.py module skeleton | module imports | done
+T-0078 | 2 | target | Write failing test: harness checkout of buggy revision (red) | test fails (no checkout) | done
+T-0079 | 2 | target | Implement BugsInPy checkout (buggy version) in harness | checkout succeeds | done
+T-0080 | 2 | target | Make checkout test pass (green) | test passes | done
+T-0081 | 2 | target | Implement isolated venv creation per target (uv venv) | venv created under data/ | done
+T-0082 | 2 | target | Test isolated venv is separate from project venv | sys.prefix differs | done
+T-0083 | 2 | target | Install target deps into isolated venv | pip list shows target deps | done
+T-0084 | 2 | target | Implement compile/import sanity check of target | target imports in venv | done
+T-0085 | 2 | target | Test import sanity check | test passes | done
+T-0086 | 2 | target | Implement run-failing-test entrypoint (subprocess into venv) | returns test result obj | done
+T-0087 | 2 | target | Write failing test for run-failing-test wrapper (red) | test fails | done
+T-0088 | 2 | target | Implement run wrapper parsing pytest output | parses pass/fail counts | done
+T-0089 | 2 | target | Make run wrapper test pass (green) | test passes | done
+T-0090 | 2 | target | Capture baseline: confirm target bug test FAILS | FAIL recorded in artifacts | done
+T-0091 | 2 | target | Implement fixed-version checkout path (reference) | fixed rev checks out | done
+T-0092 | 2 | target | Confirm fixed-version test PASSES (reference oracle) | PASS recorded | done
+T-0093 | 2 | target | Persist baseline result to artifacts/baseline.json | JSON written | done
+T-0094 | 2 | target | Test baseline persistence round-trip | load==dump | done
+T-0095 | 2 | target | Add timeout + resource caps to subprocess runner | timeout enforced | done
+T-0096 | 2 | target | Test timeout cap triggers on hang | TimeoutError raised | done
+T-0097 | 2 | target | Capture stdout/stderr/return-code into result object | fields populated | done
+T-0098 | 2 | target | Redact secrets/paths from captured output (sanitize) | no abs home paths leak | done
+T-0099 | 2 | target | Test sanitizer redaction | redacted strings absent | done
+T-0100 | 2 | infra | Wire harness into CLI subcommand `target prepare` | CLI prepares target | done
+T-0101 | 2 | infra | Wire CLI subcommand `target run-test` | CLI runs failing test | done
+T-0102 | 2 | infra | Add fixture: tmp target sandbox for tests | fixture yields sandbox | done
+T-0103 | 2 | infra | Add fixture: mocked subprocess for fast unit tests | fixture mocks Popen | done
+T-0104 | 2 | target | Snapshot target source tree into data/target_src/ (read-only copy) | tree copied | done
+T-0105 | 2 | target | Test snapshot integrity (file count/hash) | hash matches | done
+T-0106 | 2 | infra | Add error taxonomy (HarnessError, CheckoutError, TargetTestError) | exceptions defined | done
+T-0107 | 2 | infra | Test error taxonomy raised on expected failures | each raised in case | done
+T-0108 | 2 | infra | Add structured run-ledger writer (append-only JSONL) | ledger appends | done
+T-0109 | 2 | infra | Test run-ledger append + read | entries round-trip | done
+T-0110 | 2 | infra | Add docstrings + type hints across target package | ruff/mypy clean | done
+T-0111 | 2 | infra | Run coverage gate on Phase-2 modules (>=85%) | coverage gate green | done
+T-0112 | 2 | infra | Update docs/PRD_target.md with implemented interfaces | PRD matches code | done
+T-0113 | 2 | infra | Update reports/ with Phase-2 progress note | note written | done
+T-0114 | 2 | infra | Commit Phase-2 infra port | commit pushed; CI green | done
+T-0115 | 2 | infra | Phase-2 hardening task #55: edge-case test + fix (target harness) | new edge case covered | done
+T-0116 | 2 | infra | Phase-2 hardening task #56: edge-case test + fix (target harness) | new edge case covered | done
+T-0117 | 2 | infra | Phase-2 hardening task #57: edge-case test + fix (target harness) | new edge case covered | done
+T-0118 | 2 | infra | Phase-2 hardening task #58: edge-case test + fix (target harness) | new edge case covered | done
+T-0119 | 2 | infra | Phase-2 hardening task #59: edge-case test + fix (target harness) | new edge case covered | done
+T-0120 | 2 | infra | Phase-2 hardening task #60: edge-case test + fix (target harness) | new edge case covered | done
+T-0121 | 2 | infra | Phase-2 hardening task #61: edge-case test + fix (target harness) | new edge case covered | done
+T-0122 | 2 | infra | Phase-2 hardening task #62: edge-case test + fix (target harness) | new edge case covered | done
+T-0123 | 2 | infra | Phase-2 hardening task #63: edge-case test + fix (target harness) | new edge case covered | done
+T-0124 | 2 | infra | Phase-2 hardening task #64: edge-case test + fix (target harness) | new edge case covered | done
+T-0125 | 2 | infra | Phase-2 hardening task #65: edge-case test + fix (target harness) | new edge case covered | done
+T-0126 | 2 | infra | Phase-2 hardening task #66: edge-case test + fix (target harness) | new edge case covered | done
+T-0127 | 2 | infra | Phase-2 hardening task #67: edge-case test + fix (target harness) | new edge case covered | done
+T-0128 | 2 | infra | Phase-2 hardening task #68: edge-case test + fix (target harness) | new edge case covered | done
+T-0129 | 2 | infra | Phase-2 hardening task #69: edge-case test + fix (target harness) | new edge case covered | done
+T-0130 | 2 | infra | Phase-2 hardening task #70: edge-case test + fix (target harness) | new edge case covered | done
 
 ## Phase 3 — Graphify run + graph.json parser (tiers, centrality, god_nodes)
 
