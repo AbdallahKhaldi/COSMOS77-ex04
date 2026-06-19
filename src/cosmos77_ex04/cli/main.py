@@ -110,6 +110,13 @@ def _dispatch(command: str) -> int:
             f"({comparison['pct_tokens_saved']}%), {comparison['files_saved']} files"
         )
         return 0
+    if command == "extensions":
+        result = sdk.run_extensions()
+        print(f"suspects: {result['suspects']}  top: {result['top_suspect']}")
+        print(f"hot: {result['hot']}")
+        print(f"orphans: {result['orphans']} ({result['orphan_count']} orphans)")
+        print(f"impact: {result['impact']}")
+        return 0
     print(f"`{command}` is not wired yet — it lands in its phase (see TODO.md).")
     return 0
 

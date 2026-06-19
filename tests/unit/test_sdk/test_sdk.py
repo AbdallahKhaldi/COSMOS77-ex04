@@ -5,8 +5,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
-
 from cosmos77_ex04.sdk import sdk as sdkmod
 from cosmos77_ex04.target.checkout import BugTestResult, TargetInfo
 from cosmos77_ex04.target.info import BugInfo
@@ -78,12 +76,3 @@ def test_spec_sheet_returns_ledger(config):
 
 def test_repo_root_is_config_parent(config, config_dir):
     assert sdkmod.SDK(config=config).repo_root == config_dir.parent
-
-
-@pytest.mark.parametrize(
-    "method",
-    ["run_extensions"],
-)
-def test_unimplemented_stages_raise(config, method):
-    with pytest.raises(NotImplementedError):
-        getattr(sdkmod.SDK(config=config), method)()

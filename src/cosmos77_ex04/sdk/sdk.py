@@ -14,6 +14,7 @@ from typing import Any
 
 from cosmos77_ex04.agent.fix import run_fix
 from cosmos77_ex04.agent.graph import investigate
+from cosmos77_ex04.extensions.run import run_extensions as run_extensions_fn
 from cosmos77_ex04.graphify.fallback import write_fallback
 from cosmos77_ex04.graphify.model import GraphModel
 from cosmos77_ex04.graphify.report import parse_report
@@ -128,9 +129,9 @@ class SDK:
         """Run the honest naive-vs-graph-guided token comparison (real Gemini, same bug)."""
         return run_comparison(self.config, self.repo_root)
 
-    def run_extensions(self) -> Any:
-        """Run the original extensions (Phase 9)."""
-        raise NotImplementedError("run_extensions lands in Phase 9")
+    def run_extensions(self) -> dict[str, Any]:
+        """Run the original extensions (centrality, dynamic hot.md, orphans, impact)."""
+        return run_extensions_fn(self.config, self.repo_root)
 
     def spec_sheet(self) -> dict[str, Any]:
         """Return the measured token ledger (the Spec Sheet aggregate, C15)."""
