@@ -155,66 +155,66 @@ T-0130 | 2 | infra | Phase-2 hardening task #70: edge-case test + fix (target ha
 
 ## Phase 3 — Graphify run + graph.json parser (tiers, centrality, god_nodes)
 
-T-0131 | 3 | graphify | Write src/cosmos77/graph/runner.py to invoke Graphify on target_src | module imports | todo
-T-0132 | 3 | graphify | Write failing test: Graphify runner produces graph.json (red) | test fails | todo
-T-0133 | 3 | graphify | Implement Graphify invocation (subprocess) + capture graph.json | graph.json written | todo
-T-0134 | 3 | graphify | Make Graphify runner test pass (green) | test passes | todo
-T-0135 | 3 | graphify | Add Graphify config (languages, include/exclude globs) | config honored | todo
-T-0136 | 3 | graphify | Persist raw graph.json to artifacts/graph/raw.json | file present | todo
-T-0137 | 3 | parser | Define dataclasses Node/Edge/Graph in src/cosmos77/graph/model.py | types defined | todo
-T-0138 | 3 | parser | Write failing test for graph.json parser (red) | test fails | todo
-T-0139 | 3 | parser | Implement graph.json parser -> Graph object (green) | parses sample | todo
-T-0140 | 3 | parser | Add schema validation for graph.json (Pydantic) | bad json raises | todo
-T-0141 | 3 | parser | Test parser on malformed graph.json | raises clear error | todo
-T-0142 | 3 | parser | Normalize node ids + dedupe edges | no dup edges | todo
-T-0143 | 3 | parser | Test edge dedupe + id normalization | counts correct | todo
-T-0144 | 3 | tiers | Define evidence tiers Extracted/Inferred/Ambiguous in src/cosmos77/graph/tiers.py | enum + rules | todo
-T-0145 | 3 | tiers | Write failing test for tier classification (red) | test fails | todo
-T-0146 | 3 | tiers | Implement tier classifier (Extracted=in graph, Inferred=derived, Ambiguous=uncertain) | green | todo
-T-0147 | 3 | tiers | Tag every node/edge with an evidence tier | all tagged | todo
-T-0148 | 3 | tiers | Test tier coverage (no untagged nodes) | 100% tagged | todo
-T-0149 | 3 | centrality | Add src/cosmos77/graph/centrality.py (degree centrality) | function returns dict | todo
-T-0150 | 3 | centrality | Write failing test for degree centrality (red) | test fails | todo
-T-0151 | 3 | centrality | Implement degree centrality (green) | test passes on toy graph | todo
-T-0152 | 3 | centrality | Implement betweenness centrality | values computed | todo
-T-0153 | 3 | centrality | Test betweenness on known toy graph | matches expected | todo
-T-0154 | 3 | centrality | Implement pagerank/eigenvector centrality | converges | todo
-T-0155 | 3 | centrality | Test pagerank sums ~1.0 | assertion holds | todo
-T-0156 | 3 | centrality | Combine centralities into ranked centrality table | ranked list | todo
-T-0157 | 3 | centrality | Persist centrality table to artifacts/graph/centrality.json | file present | todo
-T-0158 | 3 | centrality | Test centrality persistence round-trip | load==dump | todo
-T-0159 | 3 | godnode | Add src/cosmos77/graph/god_nodes.py detector | module imports | todo
-T-0160 | 3 | godnode | Write failing test for God Node detection (red) | test fails | todo
-T-0161 | 3 | godnode | Implement God Node detection (high centrality + high fan-in/out) | green | todo
-T-0162 | 3 | godnode | Define God Node threshold heuristic + make configurable | threshold in config | todo
-T-0163 | 3 | godnode | Test God Node threshold boundary cases | boundaries correct | todo
-T-0164 | 3 | godnode | Rank god_nodes and persist to artifacts/graph/god_nodes.json | file present | todo
-T-0165 | 3 | godnode | Test god_nodes persistence | round-trip ok | todo
-T-0166 | 3 | community | Add community detection (Louvain/label-prop) module | communities returned | todo
-T-0167 | 3 | community | Write failing test for community detection (red) | test fails | todo
-T-0168 | 3 | community | Implement community detection (green) | >=1 community on toy | todo
-T-0169 | 3 | community | Assign each node a community id | all assigned | todo
-T-0170 | 3 | community | Test community assignment coverage | 100% assigned | todo
-T-0171 | 3 | community | Persist communities to artifacts/graph/communities.json | file present | todo
-T-0172 | 3 | parser | Add graph stats (node/edge counts, density, components) | stats dict | todo
-T-0173 | 3 | parser | Test graph stats on toy graph | values match | todo
-T-0174 | 3 | parser | Add orphan/leaf detection (degree-0 / sink nodes) | orphans listed | todo
-T-0175 | 3 | parser | Test orphan detection | matches expected | todo
-T-0176 | 3 | graphify | Add CLI subcommand `graph build` (run+parse+analyze) | CLI produces artifacts | todo
-T-0177 | 3 | graphify | Test `graph build` end-to-end on fixture | artifacts created | todo
-T-0178 | 3 | graphify | Add fixture: small synthetic graph.json | fixture loads | todo
-T-0179 | 3 | graphify | Add fixture: real target graph.json snapshot | fixture loads | todo
-T-0180 | 3 | parser | Sanitize graph (strip abs paths, secrets) before persist | no leaks | todo
-T-0181 | 3 | parser | Test graph sanitizer | redactions present | todo
-T-0182 | 3 | graphify | Add docstrings + type hints across graph package | ruff/mypy clean | todo
-T-0183 | 3 | graphify | Run coverage gate on graph package (>=85%) | gate green | todo
-T-0184 | 3 | graphify | Emit graph summary report to reports/graph_summary.md | report written | todo
-T-0185 | 3 | graphify | Test graph summary report generation | file non-empty | todo
-T-0186 | 3 | graphify | Update docs/PRD_graphify.md with implemented interfaces | PRD matches code | todo
-T-0187 | 3 | graphify | Update PLAN gate checklist for Phase 3 | gate items checked | todo
-T-0188 | 3 | graphify | Commit Phase-3 graph pipeline | commit pushed; CI green | todo
-T-0189 | 3 | graphify | Cross-check god_nodes vs centrality top-K consistency | overlap reported | todo
-T-0190 | 3 | graphify | Phase-3 graph robustness task #60: edge case + regression test | case covered | todo
+T-0131 | 3 | graphify | Write src/cosmos77/graph/runner.py to invoke Graphify on target_src | module imports | done
+T-0132 | 3 | graphify | Write failing test: Graphify runner produces graph.json (red) | test fails | done
+T-0133 | 3 | graphify | Implement Graphify invocation (subprocess) + capture graph.json | graph.json written | done
+T-0134 | 3 | graphify | Make Graphify runner test pass (green) | test passes | done
+T-0135 | 3 | graphify | Add Graphify config (languages, include/exclude globs) | config honored | done
+T-0136 | 3 | graphify | Persist raw graph.json to artifacts/graph/raw.json | file present | done
+T-0137 | 3 | parser | Define dataclasses Node/Edge/Graph in src/cosmos77/graph/model.py | types defined | done
+T-0138 | 3 | parser | Write failing test for graph.json parser (red) | test fails | done
+T-0139 | 3 | parser | Implement graph.json parser -> Graph object (green) | parses sample | done
+T-0140 | 3 | parser | Add schema validation for graph.json (Pydantic) | bad json raises | done
+T-0141 | 3 | parser | Test parser on malformed graph.json | raises clear error | done
+T-0142 | 3 | parser | Normalize node ids + dedupe edges | no dup edges | done
+T-0143 | 3 | parser | Test edge dedupe + id normalization | counts correct | done
+T-0144 | 3 | tiers | Define evidence tiers Extracted/Inferred/Ambiguous in src/cosmos77/graph/tiers.py | enum + rules | done
+T-0145 | 3 | tiers | Write failing test for tier classification (red) | test fails | done
+T-0146 | 3 | tiers | Implement tier classifier (Extracted=in graph, Inferred=derived, Ambiguous=uncertain) | green | done
+T-0147 | 3 | tiers | Tag every node/edge with an evidence tier | all tagged | done
+T-0148 | 3 | tiers | Test tier coverage (no untagged nodes) | 100% tagged | done
+T-0149 | 3 | centrality | Add src/cosmos77/graph/centrality.py (degree centrality) | function returns dict | done
+T-0150 | 3 | centrality | Write failing test for degree centrality (red) | test fails | done
+T-0151 | 3 | centrality | Implement degree centrality (green) | test passes on toy graph | done
+T-0152 | 3 | centrality | Implement betweenness centrality | values computed | done
+T-0153 | 3 | centrality | Test betweenness on known toy graph | matches expected | done
+T-0154 | 3 | centrality | Implement pagerank/eigenvector centrality | converges | done
+T-0155 | 3 | centrality | Test pagerank sums ~1.0 | assertion holds | done
+T-0156 | 3 | centrality | Combine centralities into ranked centrality table | ranked list | done
+T-0157 | 3 | centrality | Persist centrality table to artifacts/graph/centrality.json | file present | done
+T-0158 | 3 | centrality | Test centrality persistence round-trip | load==dump | done
+T-0159 | 3 | godnode | Add src/cosmos77/graph/god_nodes.py detector | module imports | done
+T-0160 | 3 | godnode | Write failing test for God Node detection (red) | test fails | done
+T-0161 | 3 | godnode | Implement God Node detection (high centrality + high fan-in/out) | green | done
+T-0162 | 3 | godnode | Define God Node threshold heuristic + make configurable | threshold in config | done
+T-0163 | 3 | godnode | Test God Node threshold boundary cases | boundaries correct | done
+T-0164 | 3 | godnode | Rank god_nodes and persist to artifacts/graph/god_nodes.json | file present | done
+T-0165 | 3 | godnode | Test god_nodes persistence | round-trip ok | done
+T-0166 | 3 | community | Add community detection (Louvain/label-prop) module | communities returned | done
+T-0167 | 3 | community | Write failing test for community detection (red) | test fails | done
+T-0168 | 3 | community | Implement community detection (green) | >=1 community on toy | done
+T-0169 | 3 | community | Assign each node a community id | all assigned | done
+T-0170 | 3 | community | Test community assignment coverage | 100% assigned | done
+T-0171 | 3 | community | Persist communities to artifacts/graph/communities.json | file present | done
+T-0172 | 3 | parser | Add graph stats (node/edge counts, density, components) | stats dict | done
+T-0173 | 3 | parser | Test graph stats on toy graph | values match | done
+T-0174 | 3 | parser | Add orphan/leaf detection (degree-0 / sink nodes) | orphans listed | done
+T-0175 | 3 | parser | Test orphan detection | matches expected | done
+T-0176 | 3 | graphify | Add CLI subcommand `graph build` (run+parse+analyze) | CLI produces artifacts | done
+T-0177 | 3 | graphify | Test `graph build` end-to-end on fixture | artifacts created | done
+T-0178 | 3 | graphify | Add fixture: small synthetic graph.json | fixture loads | done
+T-0179 | 3 | graphify | Add fixture: real target graph.json snapshot | fixture loads | done
+T-0180 | 3 | parser | Sanitize graph (strip abs paths, secrets) before persist | no leaks | done
+T-0181 | 3 | parser | Test graph sanitizer | redactions present | done
+T-0182 | 3 | graphify | Add docstrings + type hints across graph package | ruff/mypy clean | done
+T-0183 | 3 | graphify | Run coverage gate on graph package (>=85%) | gate green | done
+T-0184 | 3 | graphify | Emit graph summary report to reports/graph_summary.md | report written | done
+T-0185 | 3 | graphify | Test graph summary report generation | file non-empty | done
+T-0186 | 3 | graphify | Update docs/PRD_graphify.md with implemented interfaces | PRD matches code | done
+T-0187 | 3 | graphify | Update PLAN gate checklist for Phase 3 | gate items checked | done
+T-0188 | 3 | graphify | Commit Phase-3 graph pipeline | commit pushed; CI green | done
+T-0189 | 3 | graphify | Cross-check god_nodes vs centrality top-K consistency | overlap reported | done
+T-0190 | 3 | graphify | Phase-3 graph robustness task #60: edge case + regression test | case covered | done
 
 ## Phase 4 — Obsidian vault (index nav hub + hot.md + component/suspect pages)
 
