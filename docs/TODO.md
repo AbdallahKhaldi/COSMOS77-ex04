@@ -606,51 +606,51 @@ T-0560 | 9 | ext | Phase-9 extension polish task #55: edge case + test | case co
 
 ## Phase 10 — README lab report + visuals + spec sheet
 
-T-0561 | 10 | report | Outline README lab report (problem, method, results, discussion) | outline drafted | todo
-T-0562 | 10 | report | Write README intro + problem statement | section written | todo
-T-0563 | 10 | report | Write method section (graph-guided pipeline overview) | section written | todo
-T-0564 | 10 | report | Add architecture diagram (pipeline blocks) Mermaid+PNG | diagram embedded | todo
-T-0565 | 10 | report | Test architecture diagram renders | PNG present | todo
-T-0566 | 10 | report | Write graph-extraction results (god nodes, centrality) | section written | todo
-T-0567 | 10 | report | Embed god_nodes + centrality tables | tables present | todo
-T-0568 | 10 | report | Write reverse-engineering summary + diagrams | section written | todo
-T-0569 | 10 | report | Write agent design summary + topology diagram | section written | todo
-T-0570 | 10 | report | Write bug-fix results (FAIL->PASS, before/after) | section written | todo
-T-0571 | 10 | report | Embed before/after diff in README | diff embedded | todo
-T-0572 | 10 | report | Write token-comparison results + charts | section written | todo
-T-0573 | 10 | report | Embed token charts in README | charts embedded | todo
-T-0574 | 10 | report | Write extensions summary | section written | todo
-T-0575 | 10 | report | Write discussion (what worked, what didn't, honest) | section written | todo
-T-0576 | 10 | report | Write limitations + future work | section written | todo
-T-0577 | 10 | report | Add reproducibility/quickstart (uv sync, CLI commands) | quickstart present | todo
-T-0578 | 10 | report | Test quickstart commands run (smoke) | commands succeed | todo
-T-0579 | 10 | report | Add spec sheet (deps, versions, models, configs) | spec sheet present | todo
-T-0580 | 10 | report | Verify spec sheet matches pyproject/uv.lock | matches | todo
-T-0581 | 10 | report | Add evidence-tier legend to README | legend present | todo
-T-0582 | 10 | report | Tag README claims with evidence tiers where relevant | tiers present | todo
-T-0583 | 10 | report | Add links to vault, reports, artifacts | links resolve | todo
-T-0584 | 10 | report | Test README links resolve (link checker) | 0 broken links | todo
-T-0585 | 10 | report | Add table of contents | TOC present | todo
-T-0586 | 10 | report | Add badges (CI, coverage, version) | badges render | todo
-T-0587 | 10 | report | Verify all images use relative paths | render on GitHub | todo
-T-0588 | 10 | report | Sanitize README (no abs paths/secrets) | no leaks | todo
-T-0589 | 10 | report | Test README sanitizer | redactions present | todo
-T-0590 | 10 | report | Add 'honest measurement' summary box | box present | todo
-T-0591 | 10 | report | Add credits/acknowledgements + license note | present | todo
-T-0592 | 10 | report | Generate all visuals (run viz pipeline) | visuals produced | todo
-T-0593 | 10 | report | Test visuals pipeline end-to-end | all PNGs present | todo
-T-0594 | 10 | report | Optimize/compress PNGs for repo size | sizes reduced | todo
-T-0595 | 10 | report | Add results-at-a-glance summary table | table present | todo
-T-0596 | 10 | report | Proofread README (spelling/grammar pass) | clean | todo
-T-0597 | 10 | report | Peer-review README lab report | review addressed | todo
-T-0598 | 10 | report | Cross-check README claims vs artifacts (no overclaim) | claims supported | todo
-T-0599 | 10 | report | Add changelog reference + version stamp | present | todo
-T-0600 | 10 | report | Run markdown lint on README | lint clean | todo
-T-0601 | 10 | report | Verify README renders in GitHub preview | renders | todo
-T-0602 | 10 | report | Update docs/PRD_report.md with final structure | PRD matches | todo
-T-0603 | 10 | report | Update reports/ index with README artifact | index updated | todo
-T-0604 | 10 | report | Commit Phase-10 lab report + visuals | commit pushed; CI green | todo
-T-0605 | 10 | report | Final consistency pass across all reports | consistent | todo
+T-0561 | 10 | report | Outline README lab report (problem, method, results, discussion) | outline drafted | done
+T-0562 | 10 | report | Write README intro + problem statement | section written | done
+T-0563 | 10 | report | Write method section (graph-guided pipeline overview) | section written | done
+T-0564 | 10 | report | Add architecture diagram (pipeline blocks) Mermaid+PNG | diagram embedded | done
+T-0565 | 10 | report | Test architecture diagram renders | PNG present | done
+T-0566 | 10 | report | Write graph-extraction results (god nodes, centrality) | section written | done
+T-0567 | 10 | report | Embed god_nodes + centrality tables | tables present | done
+T-0568 | 10 | report | Write reverse-engineering summary + diagrams | section written | done
+T-0569 | 10 | report | Write agent design summary + topology diagram | section written | done
+T-0570 | 10 | report | Write bug-fix results (FAIL->PASS, before/after) | section written | done
+T-0571 | 10 | report | Embed before/after diff in README | diff embedded | done
+T-0572 | 10 | report | Write token-comparison results + charts | section written | done
+T-0573 | 10 | report | Embed token charts in README | charts embedded | done
+T-0574 | 10 | report | Write extensions summary | section written | done
+T-0575 | 10 | report | Write discussion (what worked, what didn't, honest) | section written | done
+T-0576 | 10 | report | Write limitations + future work | section written | done
+T-0577 | 10 | report | Add reproducibility/quickstart (uv sync, CLI commands) | quickstart present | done
+T-0578 | 10 | report | Test quickstart commands run (smoke) | commands succeed | done
+T-0579 | 10 | report | Add spec sheet (deps, versions, models, configs) | spec sheet present | done
+T-0580 | 10 | report | Verify spec sheet matches pyproject/uv.lock | matches | done
+T-0581 | 10 | report | Add evidence-tier legend to README | legend present | done
+T-0582 | 10 | report | Tag README claims with evidence tiers where relevant | tiers present | done
+T-0583 | 10 | report | Add links to vault, reports, artifacts | links resolve | done
+T-0584 | 10 | report | Test README links resolve (link checker) | 0 broken links | done
+T-0585 | 10 | report | Add table of contents | TOC present | done
+T-0586 | 10 | report | Add badges (CI, coverage, version) | badges render | done
+T-0587 | 10 | report | Verify all images use relative paths | render on GitHub | done
+T-0588 | 10 | report | Sanitize README (no abs paths/secrets) | no leaks | done
+T-0589 | 10 | report | Test README sanitizer | redactions present | done
+T-0590 | 10 | report | Add 'honest measurement' summary box | box present | done
+T-0591 | 10 | report | Add credits/acknowledgements + license note | present | done
+T-0592 | 10 | report | Generate all visuals (run viz pipeline) | visuals produced | done
+T-0593 | 10 | report | Test visuals pipeline end-to-end | all PNGs present | done
+T-0594 | 10 | report | Optimize/compress PNGs for repo size | sizes reduced | done
+T-0595 | 10 | report | Add results-at-a-glance summary table | table present | done
+T-0596 | 10 | report | Proofread README (spelling/grammar pass) | clean | done
+T-0597 | 10 | report | Peer-review README lab report | review addressed | done
+T-0598 | 10 | report | Cross-check README claims vs artifacts (no overclaim) | claims supported | done
+T-0599 | 10 | report | Add changelog reference + version stamp | present | done
+T-0600 | 10 | report | Run markdown lint on README | lint clean | done
+T-0601 | 10 | report | Verify README renders in GitHub preview | renders | done
+T-0602 | 10 | report | Update docs/PRD_report.md with final structure | PRD matches | done
+T-0603 | 10 | report | Update reports/ index with README artifact | index updated | done
+T-0604 | 10 | report | Commit Phase-10 lab report + visuals | commit pushed; CI green | done
+T-0605 | 10 | report | Final consistency pass across all reports | consistent | done
 
 ## Phase 11 — QA gauntlet + acceptance audit C1–C15
 
