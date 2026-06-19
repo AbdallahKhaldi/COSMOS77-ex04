@@ -1,0 +1,32 @@
+{
+  "version": "1.00",
+  "target": {
+    "source": "bugsinpy",
+    "project": "tqdm",
+    "bug_id": null,
+    "workdir": "data/target",
+    "isolation": "venv"
+  },
+  "graphify": {
+    "out_dir": "graphify-out",
+    "obsidian": true,
+    "wiki": true
+  },
+  "agent": {
+    "framework": "langgraph",
+    "max_llm_calls": 6,
+    "recursion_limit": 12,
+    "max_output_tokens": 4096,
+    "graph_guided_first": true
+  },
+  "tokens": {
+    "baseline_mode": "raw_files",
+    "guided_mode": "graph_guided",
+    "measure": ["tokens", "files_read", "iterations", "time_to_root_cause"]
+  },
+  "paths": {
+    "obsidian_dir": "obsidian",
+    "reports_dir": "reports",
+    "artifacts_dir": "artifacts"
+  }
+}

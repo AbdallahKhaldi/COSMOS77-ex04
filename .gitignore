@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets — the free GOOGLE_API_KEY lives in .env (never committed; CLAUDE.md rule 9)
+.env
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+
+# Linters / formatters
+.ruff_cache/
+.mypy_cache/
+
+# OS / IDE / local tooling
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# Runtime logs (keep the directory, drop the rotating log files)
+logs/*.log
+logs/*.jsonl
+!logs/.gitkeep
+
+# BugsInPy target checkout — the isolated target repo + its own venv are NOT ours
+# (CLAUDE.md rule 5). Keep the data/ directory; ignore the checked-out code.
+data/target/
+data/*
+!data/.gitkeep
+
+# Graphify HTML render can be large; KEEP graph.json + diagrams + reports + vault.
+artifacts/graph.html
+artifacts/*.html
+
+# Cover-sheet artifacts (the cover PDF is generated OUTSIDE the repo in Phase 12)
+*.filled.docx
+uoh-rl07-ex01.docx
+COSMOS77-ex04.pdf
+
+# uv cache (the lock file IS committed)
+.uv-cache/
