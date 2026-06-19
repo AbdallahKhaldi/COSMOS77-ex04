@@ -697,28 +697,28 @@ T-0645 | 11 | qa | Phase-11 QA hardening task #40: extra check + fix | check cov
 
 ## Phase 12 — Cover PDF (exercise=4) + tag v1.00 + release + Moodle
 
-T-0646 | 12 | release | Draft cover sheet content (course UOH-RL07, exercise=4, student) | draft ready | todo
-T-0647 | 12 | release | Set exercise number = 4 on cover sheet | exercise=4 set | todo
-T-0648 | 12 | release | Generate cover PDF (render to PDF) | PDF produced | todo
-T-0649 | 12 | release | Verify cover PDF metadata (exercise=4, title) | metadata correct | todo
-T-0650 | 12 | release | Test cover PDF non-empty + opens | valid PDF | todo
-T-0651 | 12 | release | Assemble submission bundle (report+artifacts+vault refs) | bundle listed | todo
-T-0652 | 12 | release | Final version stamp v1.00 across files | versions consistent | todo
-T-0653 | 12 | release | Update CHANGELOG for v1.00 release | entry present | todo
-T-0654 | 12 | release | Verify working tree clean before tag | git clean | todo
-T-0655 | 12 | release | Run full gate one last time pre-release | all green | todo
-T-0656 | 12 | release | Create annotated git tag v1.00 | tag created | todo
-T-0657 | 12 | release | Push tag v1.00 to remote | tag pushed | todo
-T-0658 | 12 | release | Create GitHub release v1.00 with notes | release published | todo
-T-0659 | 12 | release | Attach cover PDF + key artifacts to release | assets attached | todo
-T-0660 | 12 | release | Verify release assets download + open | assets valid | todo
-T-0661 | 12 | release | Verify CI green on tagged commit | CI green | todo
-T-0662 | 12 | release | Prepare Moodle submission (links + PDF) | submission ready | todo
-T-0663 | 12 | release | Submit to Moodle (UOH-RL07 exercise 4) | submitted | todo
-T-0664 | 12 | release | Confirm Moodle submission receipt | receipt saved | todo
-T-0665 | 12 | release | Archive final artifacts snapshot | archive saved | todo
-T-0666 | 12 | release | Write reports/release_notes.md | notes written | todo
-T-0667 | 12 | release | Final repo hygiene check (no stray files) | clean | todo
-T-0668 | 12 | release | Verify README links work on release tag | resolve | todo
-T-0669 | 12 | release | Post-release sanity: clone tag + smoke run | smoke passes | todo
-T-0670 | 12 | release | Close out TODO ledger (mark phases complete) | ledger reconciled | todo
+T-0646 | 12 | release | Draft cover sheet content (course UOH-RL07, exercise=4, student) | draft ready | done
+T-0647 | 12 | release | Set exercise number = 4 on cover sheet | exercise=4 set | done
+T-0648 | 12 | release | Generate cover PDF (render to PDF) | PDF produced | done
+T-0649 | 12 | release | Verify cover PDF metadata (exercise=4, title) | metadata correct | done
+T-0650 | 12 | release | Test cover PDF non-empty + opens | valid PDF | done
+T-0651 | 12 | release | Assemble submission bundle (report+artifacts+vault refs) | bundle listed | done
+T-0652 | 12 | release | Final version stamp v1.00 across files | versions consistent | done
+T-0653 | 12 | release | Update CHANGELOG for v1.00 release | entry present | done
+T-0654 | 12 | release | Verify working tree clean before tag | git clean | done
+T-0655 | 12 | release | Run full gate one last time pre-release | all green | done
+T-0656 | 12 | release | Create annotated git tag v1.00 | tag created | done
+T-0657 | 12 | release | Push tag v1.00 to remote | tag pushed | done
+T-0658 | 12 | release | Create GitHub release v1.00 with notes | release published | done
+T-0659 | 12 | release | Attach cover PDF + key artifacts to release | assets attached | done
+T-0660 | 12 | release | Verify release assets download + open | assets valid | done
+T-0661 | 12 | release | Verify CI green on tagged commit | CI green | done
+T-0662 | 12 | release | Prepare Moodle submission (links + PDF) | submission ready | done
+T-0663 | 12 | release | Submit to Moodle (UOH-RL07 exercise 4) | submitted | done
+T-0664 | 12 | release | Confirm Moodle submission receipt | receipt saved | done
+T-0665 | 12 | release | Archive final artifacts snapshot | archive saved | done
+T-0666 | 12 | release | Write reports/release_notes.md | notes written | done
+T-0667 | 12 | release | Final repo hygiene check (no stray files) | clean | done
+T-0668 | 12 | release | Verify README links work on release tag | resolve | done
+T-0669 | 12 | release | Post-release sanity: clone tag + smoke run | smoke passes | done
+T-0670 | 12 | release | Close out TODO ledger (mark phases complete) | ledger reconciled | done
